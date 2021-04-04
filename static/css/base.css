@@ -1,0 +1,15 @@
+.navbar {
+    height: 100px;
+    background-color: #37003c;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
