@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navbar {
     height: 100px;
     background-color: #37003c;
@@ -11,5 +17,33 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+
+.nav-link:hover {
+    color: #ff2882 !important;
+}
+
+/* Taken from the Code Institute - Boutique Ado project */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.hero-image {
+     
+    text-align: center;
+    height: 70vh;
+    background-image: url(/media/everton.png);
+    background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 2rem;
+}
+
 
 
