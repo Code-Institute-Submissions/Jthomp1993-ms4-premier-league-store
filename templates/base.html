@@ -80,13 +80,13 @@
                     </ul>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                        <li class="nav-item active pl-3">
                             <a class="nav-link" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pl-3">
                             <a class="nav-link" href="#">Store</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pl-3">
                             <a class="nav-link" href="#">News</a>
                         </li>
                     </ul>
@@ -141,6 +141,51 @@
         {% block content %}
         {% endblock %}
 
+        <footer>
+            <div class="container-fluid no-gutters">
+                <div class="row">
+                    <div class="col-12 footer-logo pt-3 d-flex justify-content-center">
+                        <a href="https://www.premierleague.com/" target="blank">
+                            <img class="" src="media/premier-league-logo-header-full.png" 
+                            alt="Premier League Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 social-media-links d-flex justify-content-center">
+                        <ul class="px-0">
+                            <li>
+                                <a href="https://www.facebook.com/premierleague/" target="blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w" target="blank">
+                                    <i class="fab fa-youtube-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/premierleague/?hl=en" target="blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 created-by text-white text-font d-flex justify-content-center mt-3">
+                        <p>Created by <a href="https://github.com/Jthomp1993">Joshua Thompson 
+                            <i class="fab fa-github"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         {% block postloadjs %}
         {% endblock %}
