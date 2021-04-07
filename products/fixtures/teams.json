@@ -1,0 +1,82 @@
+[
+    {
+        "pk": 1,
+        "model": "products.team",
+        "fields": {
+            "name": "arsenal",
+            "friendly_name": "Arsenal",
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.team",
+        "fields": {
+            "name": "chelsea",
+            "friendly_name": "Chelsea",
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.team",
+        "fields": {
+            "name": "newcastle_united",
+            "friendly_name": "Newcastle United",
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.team",
+        "fields": {
+            "name": "liverpool",
+            "friendly_name": "Liverpool",
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.team",
+        "fields": {
+            "name": "tottenham",
+            "friendly_name": "Tottenham",
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.team",
+        "fields": {
+            "name": "manchester_united",
+            "friendly_name": "Manchester United",
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.team",
+        "fields": {
+            "name": "manchester_city",
+            "friendly_name": "Manchester City",
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.team",
+        "fields": {
+            "name": "west_ham",
+            "friendly_name": "West Ham",
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.team",
+        "fields": {
+            "name": "southampton",
+            "friendly_name": "Southampton",
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.team",
+        "fields": {
+            "name": "fulham",
+            "friendly_name": "Fulham",
+        }
+    },
+]
