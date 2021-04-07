@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+.navbar-collapse {
+    background-color: #37003c;
+}
+
 .nav-link:hover {
     color: #ff2882 !important;
 }
@@ -44,6 +48,21 @@ a {
     -o-background-size: cover;
     margin-bottom: 2rem;
 }
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+footer {
+    background-color: #37003c;
+}
+
+.footer-logo img {
+    width: 250px;
+}
+
 
 
 
