@@ -1,8 +1,12 @@
+/* ---------------------------------------------------- Typography */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 .text-font {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* ---------------------------------------------------- Main page header */
 
 .navbar {
     height: 100px;
@@ -26,6 +30,7 @@ a {
 
 a:hover {
     color: #ff2882 !important;
+    text-decoration: none;
 }
 
 /* Taken from the Code Institute - Boutique Ado project */
@@ -51,6 +56,8 @@ a:hover {
     margin-bottom: 2rem;
 }
 
+/* ---------------------------------------------------- Footer */
+
 footer {
     background-color: #37003c;
 }
@@ -75,6 +82,26 @@ footer li i{
 footer p {
     font-size: 14px;
 }
+
+/* ---------------------------------------------------- Home page content */
+
+/* https://www.youtube.com/watch?v=4kWHW7da4U8 - I used this tutorial to create the CSS linear gradient */
+.home-page-content {
+    background-image: linear-gradient(to top right, #EA2979, #7E1053);
+}
+
+.content-heading h1 {
+    font-size: 48px;
+}
+
+.btn-purple {
+    background-color: #37003c;
+}
+
+.btn-purple:hover {
+    background-color: #00ff87;
+}
+
 
 
 
