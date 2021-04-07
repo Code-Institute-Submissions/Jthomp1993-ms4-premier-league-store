@@ -16,7 +16,7 @@
         }
     },
     {
-        "pk": 1,
+        "pk": 3,
         "model": "products.brand",
         "fields": {
             "name": "puma",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "pk": 1,
+        "pk": 4,
         "model": "products.brand",
         "fields": {
             "name": "umbro",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "pk": 1,
+        "pk": 5,
         "model": "products.brand",
         "fields": {
             "name": "under_armour",
