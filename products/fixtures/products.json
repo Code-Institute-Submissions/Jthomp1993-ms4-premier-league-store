@@ -5,6 +5,7 @@
         "fields": {
             "sku": "3088192799",
             "brand": 1,
+            "team": 1,
             "name": "Arsenal Home Shirt 20/21",
             "description": "Cheer on The Gunners in style with this Arsenal Home Shirt for the 20/21 season which pays homage to the clubs former Highbury home thanks to the all-over print which is inspired by the tiles that graced the interior of the iconic stadium. The jersey benefits from being engineered with Aeroready technology which sweeps moisture away from the skin and dries quickly to maximise comfort, while the adidas branding and team crest completes the on-pitch look.",
             "price": "52.00",
@@ -20,6 +21,7 @@
         "fields": {
             "sku": "691079233",
             "brand": 1,
+            "team": 1,
             "name": "Arsenal Away Shirt 20/21",
             "description": "Be match day ready with this Arsenal Away Shirt for the 20/21 season by adidas which benefits from being crafted with Aeroready technology which wicks sweat away from your skin and dries quickly to maximise comfort, while the all-over print inspired by Highbury's marble halls delivers an eye-catching look and the iconic team crest allows you to cheer on The Gunners with pride. The jersey comes complete with adidas branding, short sleeves and a V neck to complete the design.",
             "price": "52.00",
@@ -35,6 +37,7 @@
         "fields": {
             "sku": "4230781203",
             "brand": 1,
+            "team": 1,
             "name": "Arsenal Third Shirt 20/21",
             "description": "This Arsenal Third Shirt by adidas for the 2020/2021 season benefits from being developed with Aeroready technology which wicks sweat away from your skin and dries quickly to maximise comfort for the entire 90 minutes, while the graphic design delivers an eye-catching look which is contrasted by the adidas branding and team crest which allows you to showcase your support for The Gunners with pride.",
             "price": "40.00",
@@ -50,6 +53,7 @@
         "fields": {
             "sku": "2884626022",
             "brand": 1,
+            "team": 1,
             "name": "Arsenal Junior Training Shirt 18/19",
             "description": "Train in style and comfort with this Junior Puma Arsenal Training Shirt 2018 2019 which benefits from being developed with dryCELL technology which wicks moisture away from your skin to ensure you remain dry and comfortable on the pitch. The breathable design will help keep you feeling cool, whilst the the team crest allows you to show your admiration for The Gunners and the Puma branding completes the stylish look.",
             "price": "14.00",
@@ -65,6 +69,7 @@
         "fields": {
             "sku": "1480308960",
             "brand": 1,
+            "team": 1,
             "name": "Arsenal Mens Track Pants",
             "description": "Showcase your support for The Gunners with these Men's adidas Arsenal Track Pants which benefit from being crafted with AEROREADY technology which wicks sweat away from your skin, while the soft doubleknit fabric delivers a super soft feel and the elasticated waist along with the drawstring provides a snug fit. The bottoms have zipped ankle for quick changes, while the zipped hand pockets allow you to store essentials securely and the all-over graphic print completes the stylish look.",
             "price": "39.00",
@@ -80,6 +85,7 @@
         "fields": {
             "sku": "2373724675",
             "brand": 1,
+            "team": 1,
             "name": "Arsenal Mens Track Top",
             "description": "This Arsenal Graphic Track Top has been crafted with AEROREADY technology which wicks sweat away from your skin to keep you feeling fresh, while the soft doubleknit fabric feels super soft and the mesh side panels work with the quarter zip fastening to boost ventilation. The top has thumbholes at the cuffs to help lock the top in place, while the team crest and adidas branding completes the design.",
             "price": "52.99",
@@ -95,6 +101,7 @@
         "fields": {
             "sku": "385782613",
             "brand": 2,
+            "team": 2,
             "name": "Chelsea Home Shirt 20/21",
             "description": "This CFC Home Shirt for the 20/21 season has been crafted with Nike Breathe fabric and Dri-Fit technology which delivers cooling breathability and moisture management so you can enjoy your game in complete comfort. The jersey features the clubs iconic crest on the chest so those around you know that your heart belongs in West London and the Nike Swoosh branding completes the look.",
             "price": "58.00",
@@ -110,6 +117,7 @@
         "fields": {
             "sku": "144001957",
             "brand": 2,
+            "team": 2,
             "name": "Chelsea Away Shirt 20/21",
             "description": "This CFC Shirt for the 20/21 season will keep you cheering on the The Blues in comfort thanks to the Nike Breathe fabric which boosts breathability and Dri-Fit technology which wicks sweat away from the skin and dries quickly. The jersey features the clubs iconic crest on the chest so you can show that your heart belongs at Stamford Bridge and the Nike Swoosh detailing completes the look.",
             "price": "58.00",
@@ -125,6 +133,7 @@
         "fields": {
             "sku": "885867869",
             "brand": 2,
+            "team": 2,
             "name": "Chelsea Third Shirt 20/21",
             "description": "This Nike Chelsea Third Shirt 2020 2021 has been engineered with Nike Breathe fabric and Dri-Fit technology which maximises comfort on and off the pitch by enhancing breathability and wicking sweat away from the skin. The jersey features a stripe pattern which fades for an eye-catching look and the iconic team crest allows you to show your appreciation for The Blues with pride.",
             "price": "43.50",
@@ -140,6 +149,7 @@
         "fields": {
             "sku": "1114486111",
             "brand": 3,
+            "team": 3,
             "name": "Newcastle United Home Shirt 20/21",
             "description": "This NUFC Home Shirt for the 20/21 season by Puma has been developed with dryCELL technology to keep you feeling fresh and comfortable by wicking sweat away from your skin and drying quickly. The jersey features the clubs iconic crest and black and white stripes so you can clearly show that your heart belongs at St James' Park, while the Puma branding adds the finishing touch.",
             "price": "52.00",
@@ -155,6 +165,7 @@
         "fields": {
             "sku": "4170200446",
             "brand": 3,
+            "team": 3,
             "name": "Newcastle United Away Shirt 20/21",
             "description": "This NUFC Away Shirt for the 2020/2021 by Puma has been crafted with dryCELL technology which wicks sweat away from the skin and dries quickly to keep you feeling fresh and comfortable. The jersey features the clubs iconic crest located proudly on the chest and the Puma branding completes the look.",
             "price": "52.00",
@@ -170,6 +181,7 @@
         "fields": {
             "sku": "1645965815",
             "brand": 3,
+            "team": 3,
             "name": "Newcastle United Third Shirt 20/21",
             "description": "Whether you are at the game or not, ensures you are match day ready with this Newcastle United Third Shirt for the 20/21 season by Puma. The jersey benefits from being developed with dryCELL technology which wicks sweat away from your skin to keep you feeling fresh and comfortable, while the team crest and Puma branding completes the on-pitch look.",
             "price": "39.00",
@@ -185,6 +197,7 @@
         "fields": {
             "sku": "1610816057",
             "brand": 3,
+            "team": 3,
             "name": "Newcastle United Training Top 20/21",
             "description": "This NUFC Training Shirt for the 20/21 season by Puma has been developed with dryCELL technology to keep you feeling fresh and comfortable by wicking sweat away from your skin and drying quickly. The jersey features the clubs iconic crest and black and white stripes so you can clearly show that your heart belongs at St James' Park, while the Puma branding adds the finishing touch.",
             "price": "39.99",
@@ -200,6 +213,7 @@
         "fields": {
             "sku": "1250679146",
             "brand": 3,
+            "team": 3,
             "name": "Newcastle United Training Sweatshirt Top 20/21",
             "description": "Get the most out of your training sessions with this Men's Puma Newcastle United Training Sweatshirt which benefits form being developed with dryCELL technology which wicks sweat away from your skin to keep you feeling fresh and comfortable at all times. The sweatshirt features the teams crest on the chest which allows you to showcase your support for The Magpies whether you are on the pitch or walking down the street, whilst the Puma branding and team sponsor completes the look.",
             "price": "32.00",
@@ -215,6 +229,7 @@
         "fields": {
             "sku": "2912181902",
             "brand": 2,
+            "team": 4,
             "name": "Liverpool Home Shirt 20/21",
             "description": "This Liverpool Home Shirt for the 20/21 season has been engineered with Nike Breathe fabric and Dri-Fit which keeps you feeling fresh and comfortable by providing fast drying moisture management and cooling breath-ability. The jersey features the clubs iconic crest so you can show your support for the Premier League champions with pride while the Nike Swoosh branding works with the contrasting trims to complete the stylish look for a familiar designer feel.",
             "price": "58.00",
@@ -230,6 +245,7 @@
         "fields": {
             "sku": "4132650505",
             "brand": 2,
+            "team": 4,
             "name": "Liverpool Away Shirt 20/21",
             "description": "Ensure you are ready to cheer on The Reds throughout the 20/21 season with this Liverpool Away Shirt which benefits from being crafted with Nike Breathe fabric and Dri-Fit technology which keeps you feeling fresh and comfortable by boosting breathability and wicking sweat away from the skin. The jersey features an all-over print a stylish finish, while the team crest and Nike Swoosh branding completes the look.",
             "price": "52.00",
@@ -245,6 +261,7 @@
         "fields": {
             "sku": "43375410",
             "brand": 2,
+            "team": 4,
             "name": "Liverpool Third Shirt 20/21",
             "description": "This Nike Liverpool Third Shirt 2020 2021 has been engineered with Nike Breathe fabric and Dri-Fit technology which keeps you feeling fresh and comfortable by wicking sweat away from the skin and boosting breathability. The jersey features a striking grey and black check design which matches the teams stylish playing style, while the team crest and Nike Swoosh branding completes the look.",
             "price": "69.99",
@@ -260,6 +277,7 @@
         "fields": {
             "sku": "1029429076",
             "brand": 2,
+            "team": 4,
             "name": "Liverpool Vapourknit Strike Drill Top 20/21",
             "description": "This LFC Drill Top by Nike has been crafted with Vaporknit technology which delivers a precision fit, reduced cling, lightweight cooling and fast drying moisture management to maximise comfort. The top has a quarter zip fastening which allows you to adjust ventilation, while the team crest allows you to cheer on The Reds with pride and the stretchy material ensures you can move with complete freedom.",
             "price": "89.99",
@@ -275,6 +293,7 @@
         "fields": {
             "sku": "1165145958",
             "brand": 2,
+            "team": 5,
             "name": "Tottenham Home Shirt 20/21",
             "description": "This Spurs Home Shirt for the 20/21 season has been developed with Nike Breathe fabric and Dri-Fit technology which combines moisture management with cooling breathability to maximise comfort, while the all-over graphic print delivers a 90s inspired look and the team crest allows you to showcase your support for the North London club.",
             "price": "58.00",
@@ -290,6 +309,7 @@
         "fields": {
             "sku": "3465055429",
             "brand": 2,
+            "team": 5,
             "name": "Tottenham Away Shirt 20/21",
             "description": "This Spurs Away Shirt for the 20/21 has been developed with Nike Breathe fabric and Dri-Fit technology which wicks sweat away from your skin as well as boosting breathability to ensure maximum comfort, while the contrasting trims deliver a stylish look and the clubs crest boldly stands out against the green to highlight your support for the North London club and the Nike Swoosh branding completes the look.",
             "price": "69.99",
@@ -305,6 +325,7 @@
         "fields": {
             "sku": "1941948697",
             "brand": 2,
+            "team": 5,
             "name": "Tottenham Third Shirt 20/21",
             "description": "This Spurs Third Shirt for the 20/21 season has been developed with Nike Breathe fabric which incorporates Dri-Fit technology to deliver the perfect combination of cooling breathability and fast drying moisture management. The jersey comes with a crew neck and short sleeves with contrasting trims, while the iconic team crest ensures that you can show your appreciation for the North London club and the Nike Swoosh branding adds the finishing touch.",
             "price": "69.99",
@@ -320,6 +341,7 @@
         "fields": {
             "sku": "333878816",
             "brand": 2,
+            "team": 5,
             "name": "Tottenham Strike Drill Top 20/21",
             "description": "This Men's Nike Tottenham Hotspur Strike Drill Top 2020 has been crafted with Dri-Fit technology which wicks sweat away from your skin to keep you feeling fresh and comfortable, while the stretchy fabric delivers optimal movement so you can get the best out of your performance. The top has a quarter zip fastening which allows you to adjust ventilation, while the thumb loops help keep the sleeves in place and the iconic crest means your admiration for Spurs will be known.",
             "price": "60.99",
@@ -335,6 +357,7 @@
         "fields": {
             "sku": "998346263",
             "brand": 2,
+            "team": 5,
             "name": "Tottenham European Training Top",
             "description": "This Spurs European Pre Match Shirt for the 20/21 season has been crafted with Dri-Fit technology which wicks sweat away from your skin to keep you feeling fresh and comfortable, while the all-over graphic print supplies a stylish look and the team crest stands out to showcase your support for the North London club.",
             "price": "49.99",
@@ -343,6 +366,6 @@
             "image_url": "https://images.sportsdirect.com/images/products/37486422_l.jpg",
             "image": "37486422_l.png"
         }
-    },
+    }
       
 ]

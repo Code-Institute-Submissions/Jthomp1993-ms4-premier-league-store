@@ -4,7 +4,7 @@
         "model": "products.category",
         "fields": {
             "name": "home_kits",
-            "friendly_name": "Home Kits",
+            "friendly_name": "Home Kits"
         }
     },
     {
@@ -12,7 +12,7 @@
         "model": "products.category",
         "fields": {
             "name": "away_kits",
-            "friendly_name": "Away Kits",
+            "friendly_name": "Away Kits"
         }
     },
     {
@@ -20,7 +20,7 @@
         "model": "products.category",
         "fields": {
             "name": "third_kits",
-            "friendly_name": "Third Kits",
+            "friendly_name": "Third Kits"
         }
     },
     {
@@ -28,8 +28,7 @@
         "model": "products.category",
         "fields": {
             "name": "training",
-            "friendly_name": "Training",
+            "friendly_name": "Training"
         }
-    },
-
+    }
 ]

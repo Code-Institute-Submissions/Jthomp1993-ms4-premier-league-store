@@ -4,7 +4,7 @@
         "model": "products.team",
         "fields": {
             "name": "arsenal",
-            "friendly_name": "Arsenal",
+            "friendly_name": "Arsenal"
         }
     },
     {
@@ -12,7 +12,7 @@
         "model": "products.team",
         "fields": {
             "name": "chelsea",
-            "friendly_name": "Chelsea",
+            "friendly_name": "Chelsea"
         }
     },
     {
@@ -20,7 +20,7 @@
         "model": "products.team",
         "fields": {
             "name": "newcastle_united",
-            "friendly_name": "Newcastle United",
+            "friendly_name": "Newcastle United"
         }
     },
     {
@@ -28,7 +28,7 @@
         "model": "products.team",
         "fields": {
             "name": "liverpool",
-            "friendly_name": "Liverpool",
+            "friendly_name": "Liverpool"
         }
     },
     {
@@ -36,7 +36,7 @@
         "model": "products.team",
         "fields": {
             "name": "tottenham",
-            "friendly_name": "Tottenham",
+            "friendly_name": "Tottenham"
         }
     },
     {
@@ -44,7 +44,7 @@
         "model": "products.team",
         "fields": {
             "name": "manchester_united",
-            "friendly_name": "Manchester United",
+            "friendly_name": "Manchester United"
         }
     },
     {
@@ -52,7 +52,7 @@
         "model": "products.team",
         "fields": {
             "name": "manchester_city",
-            "friendly_name": "Manchester City",
+            "friendly_name": "Manchester City"
         }
     },
     {
@@ -60,7 +60,7 @@
         "model": "products.team",
         "fields": {
             "name": "west_ham",
-            "friendly_name": "West Ham",
+            "friendly_name": "West Ham"
         }
     },
     {
@@ -68,7 +68,7 @@
         "model": "products.team",
         "fields": {
             "name": "southampton",
-            "friendly_name": "Southampton",
+            "friendly_name": "Southampton"
         }
     },
     {
@@ -76,7 +76,7 @@
         "model": "products.team",
         "fields": {
             "name": "fulham",
-            "friendly_name": "Fulham",
+            "friendly_name": "Fulham"
         }
-    },
+    }
 ]
