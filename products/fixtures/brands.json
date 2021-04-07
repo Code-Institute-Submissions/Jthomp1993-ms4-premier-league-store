@@ -1,0 +1,32 @@
+[
+    {
+        "pk": 1,
+        "model": "products.brand",
+        "name": "adidas",
+        "friendly_name": "Adidas",
+    },
+    {
+        "pk": 2,
+        "model": "products.brand",
+        "name": "nike",
+        "friendly_name": "Nike",
+    },
+    {
+        "pk": 3,
+        "model": "products.brand",
+        "name": "puma",
+        "friendly_name": "Puma",
+    },
+    {
+        "pk": 4,
+        "model": "products.brand",
+        "name": "umbro",
+        "friendly_name": "Umbro",
+    },
+    {
+        "pk": 5,
+        "model": "products.brand",
+        "name": "under_armour",
+        "friendly_name": "Under Armour",
+    },
+]
