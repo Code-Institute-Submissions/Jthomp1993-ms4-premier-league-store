@@ -30,6 +30,7 @@ a {
     background-color: #37003c;
     margin-left: -15px;
     margin-right: -15px;
+    z-index: 9999999;
 }
 
 a:hover {
@@ -106,10 +107,22 @@ footer p {
     background-color: #00ff87;
 }
 
+.page-header {
+    background-image: linear-gradient(to top right, #F72533, #F9451B);
+}
+
 .product-card {
     border-top: 5px solid #ff2882;
     box-shadow: 5px 4px 4px #aaaaaa;
 }
+
+.btn-nav {
+    background-color: #37003c;
+    border-radius: 3px;
+}
+
+
+
 
 
 

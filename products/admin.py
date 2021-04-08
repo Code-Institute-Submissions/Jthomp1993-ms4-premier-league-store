@@ -24,7 +24,14 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class TeamAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Brand)
-admin.site.register(Team)
+admin.site.register(Team, TeamAdmin)
