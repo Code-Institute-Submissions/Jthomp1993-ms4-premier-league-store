@@ -59,8 +59,8 @@
         "pk": 8,
         "model": "products.team",
         "fields": {
-            "name": "west_ham",
-            "friendly_name": "West Ham"
+            "name": "west_ham_united",
+            "friendly_name": "West Ham United"
         }
     },
     {

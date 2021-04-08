@@ -30,5 +30,13 @@
             "name": "training",
             "friendly_name": "Training"
         }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "goalkeeper",
+            "friendly_name": "Goalkeeper"
+        }
     }
 ]

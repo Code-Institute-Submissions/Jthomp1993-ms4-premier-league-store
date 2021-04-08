@@ -366,6 +366,390 @@
             "image_url": "https://images.sportsdirect.com/images/products/37486422_l.jpg",
             "image": "37486422_l.png"
         }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "2773630971",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United Home Shirt 20/21",
+            "description": "This adidas Manchester United Home Shirt 2020 2021 has been crafted with Aeroready technology which absorbs sweat and dries quickly to keep you feeling cool, dry and comfortable on and off the pitch. The jersey features an all-over graphic print, while the team crest and adidas branding completes the look with an urban design signature.",
+            "price": "64.99",
+            "category": 1,
+            "rating": "4.3",
+            "image_url": "https://images.sportsdirect.com/images/products/37717608_l.jpg",
+            "image": "37717608_l.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "354842804",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United Away Shirt 20/21",
+            "description": "This Manchester United Away Shirt for the 2020 2021 season benefits from being assembled with Aeroready technology to deliver moisture wicking comfort, while the all-over print delivers a stylish look as the team compete away from Old Trafford. The jersey comes complete with the clubs iconic crest to the chest which allows you to showcase your love for The Red Devils and the adidas branding completes the perfect look for any United fan.",
+            "price": "64.99",
+            "category": 2,
+            "rating": "4.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37728416_l.jpg",
+            "image": "37728416_l.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "105926673",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United Third Shirt 20/21",
+            "description": "This Manchester Third Shirt for the 20/21 season has been developed with Aeroready technology which absorbs sweat and dries quickly to ensure you can play your game in comfort. The jersey features a bold black and white stripe print, while the contrasting team crest highlights your support for the Old Trafford club and the adidas branding adds the finishing touch.",
+            "price": "62.99",
+            "category": 3,
+            "rating": "3.8",
+            "image_url": "https://images.sportsdirect.com/images/products/37828230_l.jpg",
+            "image": "37603401_l.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "2567606953",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United European Training Top 20/21",
+            "description": "This Men's adidas Manchester United European Training Top 2020 2021 has been developed with Aeroready technology for fast drying moisture management, while the all-over graphic print and contrasting 3-Stripe branding works with the team crest to complete the stylish look perfect for any fan of The Red Devils.",
+            "price": "59.99",
+            "category": 4,
+            "rating": "4.7",
+            "image_url": "https://images.sportsdirect.com/images/products/37475824_l.jpg",
+            "image": "37475824_l.png"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "3244303749",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United Ultimate Training Top 20/21",
+            "description": "They blazed a trail for English football clubs in Europe, and Manchester United don't intend on letting up. So adidas created a club training range especially for European competition. Moisture-absorbent and full of stretch, this training top is the perfect extra layer for when you're getting ready for something big.",
+            "price": "29.99",
+            "category": 4,
+            "rating": "3.9",
+            "image_url": "https://images.sportsdirect.com/images/products/45086290_l.jpg",
+            "image": "45086290_l.png"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "2355336450",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United Drill Top 20/21",
+            "description": "They blazed a trail for English football clubs in Europe, and Manchester United don't intend on letting up. So adidas created a club training range especially for European competition. Moisture-absorbent and full of stretch, this training top is the perfect extra layer for when you're getting ready for something big.",
+            "price": "38.99",
+            "category": 4,
+            "rating": "4.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37451562_l.jpg",
+            "image": "37451562_l.png"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "2031935194",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Home Shirt 20/21",
+            "description": "Cheer on The Cityzens as they aim to secure more silverware with this Manchester City Home Shirt for the 20/21 season by Puma. The jersey features an all-over graphic print which pays homage to the mosaics that can be found throughout the city, while the dryCELL technology sweeps sweat away from the skin and dries quickly to keep you feeling fresh and focused, whereas the team crest and Puma branding completes the replica on-pitch look.",
+            "price": "64.99",
+            "category": 1,
+            "rating": "4.8",
+            "image_url": "https://images.sportsdirect.com/images/products/37747618_l.jpg",
+            "image": "37747618_l.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "17752753",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Away Shirt 20/21",
+            "description": "Support The Cityzens all season long when they are playing away from home with this Manchester City Away Shirt for the 20/21 season by Puma. The jersey features an all-over print inspired by the architecture found in the city, while the dryCELL technology wicks sweat away from your skin and dries quickly to maximise comfort and the Puma branding adds the finishing touch.",
+            "price": "64.99",
+            "category": 2,
+            "rating": "4.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37746003_l.jpg",
+            "image": "37845703_l.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "621254795",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Third Shirt 20/21",
+            "description": "Cheer on The Cityzens in style with this MCFC Third Shirt for the 20/21 season which features an eye-catching paisley print, while the dryCELL technology wicks sweat away from the skin and dries quickly to maximise comfort and the team crest ensures that all those around you know that your heart belongs on the blue side of Manchester.",
+            "price": "64.99",
+            "category": 3,
+            "rating": "5.0",
+            "image_url": "https://images.sportsdirect.com/images/products/37748838_l.jpg",
+            "image": "37748838_l.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "4036311379",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Quarter Zip Training Top 20/21",
+            "description": "This MCFC Training Top by Puma benefits from being crafted with dryCELL technology which wicks sweat away from your skin and dries quickly for optimal comfort, while the 1/4 zip fastening allows you to adjust the ventilation and the team crest ensures that you can show your support for The Cityzens.",
+            "price": "59.99",
+            "category": 4,
+            "rating": "5.0",
+            "image_url": "https://images.sportsdirect.com/images/products/37458818_l.jpg",
+            "image": "37458818_l.png"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "379724588",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Track Pants 20/21",
+            "description": "These MCFC Track Pants for the 20/21 season have been developed with dryCELL technology which wicks sweat away from the skin and dries quickly to keep you feeling fresh and comfortable, while the elasticated waist and drawstring fastening provides a secure fit and the iconic team crest allows you to cheer on The Cityzens",
+            "price": "42.00",
+            "category": 4,
+            "rating": "4.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37516959_l.jpg",
+            "image": "37516959_l.png"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "1355491511",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Pre Match Shirt 20/21",
+            "description": "This Men's Puma MCFC Pre Match Shirt for the 20/21 season has been developed with dryCELL technology which wicks sweat away from the skin to keep you feeling fresh and comfortable, while the team crest allows you to showcase your support for The Cityzens with pride and the Puma branding completes the look.",
+            "price": "49.99",
+            "category": 4,
+            "rating": "3.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37469459_l.jpg",
+            "image": "37469459_l.png"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "491603553",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Training Shirt 20/21",
+            "description": "This MCFC Training Shirt for the 20/21 season has been developed with dryCELL technology which keeps you feeling fresh and comfortable by wicking moisture away from the skin and drying quickly. The top features the clubs iconic crest so you can cheer on The Cityzens with pride and the Puma branding completes the look.",
+            "price": "39.99",
+            "category": 4,
+            "rating": "4.6",
+            "image_url": "https://images.sportsdirect.com/images/products/37461618_l.jpg",
+            "image": "37461618_l.png"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "3768041711",
+            "brand": 4,
+            "team": 8,
+            "name": "West Ham United Home Shirt 20/21",
+            "description": "Cheer on The Hammers throughout their 125th anniversary season with this West Ham United Home Shirt for the 20/21 season which has been crafted with lightweight, technical performance fabric to keep you feeling fresh and comfortable. The jersey has under arm body mapping for enhanced ventilation, while the iconic club crest features commemorative detailing to celebrate the clubs 125 years and the Umbro branding completes the look.",
+            "price": "59.99",
+            "category": 1,
+            "rating": "3.7",
+            "image_url": "https://images.sportsdirect.com/images/products/37713409_l.jpg",
+            "image": "37713409_l.png"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "4162529426",
+            "brand": 4,
+            "team": 8,
+            "name": "West Ham United Away Shirt 20/21",
+            "description": "This West Ham United Away Shirt for the 20/21 season has been engineered with lightweight, technical performance fabric which works with the under arm body mapping that increases ventilation to deliver superior comfort. The jersey features commemorative detailing to celebrate the clubs 125th anniversary, while the club crest and Umbro branding completes the look.",
+            "price": "59.99",
+            "category": 2,
+            "rating": "3.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37732419_l.jpg",
+            "image": "37732419_l.png"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "1861894731",
+            "brand": 4,
+            "team": 8,
+            "name": "West Ham United Pre Match Shirt 20/21",
+            "description": "Sow your support for The Hammers with this Umbro West Ham United Pre Match Shirt 2020 2021 which benefits from featuring an all-over print on the torso to deliver an eye-catching look, while the team crest and Umbro branding completes the look.",
+            "price": "40.00",
+            "category": 4,
+            "rating": "3.9",
+            "image_url": "https://images.sportsdirect.com/images/products/37143709_l.jpg",
+            "image": "37143709_l.png"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "944010673",
+            "brand": 5,
+            "team": 9,
+            "name": "Southampton Away Shirt 20/21",
+            "description": "This Under Armour Southampton Away Shirt 2018 2019 has been crafted with heatgear technology which combines moisture wicking comfort with cooling breathability to deliver maximum comfort on and off the pitch. The shirt features the clubs iconic crest on the chest so you can show your admiration for The Saints with pride and Under Armour branding completes the on-pitch look.",
+            "price": "90.00",
+            "category": 2,
+            "rating": "4.1",
+            "image_url": "https://images.sportsdirect.com/images/products/37707413_l.jpg",
+            "image": "37707413_l.png"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "4201859056",
+            "brand": 1,
+            "team": 10,
+            "name": "Fulham Home Shirt 19/20",
+            "description": "This adidas Fulham Home Shirt 2019 2020 has been constructed with climalite technology so you can feel comfortable at Craven Cottage thanks to the moisture wicking capabilities. The jersey features an all-over geometric print which delivers a stylish look perfect for on and off the pitch, whilst the team crest and adidas branding completes the look.",
+            "price": "54.99",
+            "category": 1,
+            "rating": "3.4",
+            "image_url": "https://images.sportsdirect.com/images/products/37710801_l.jpg",
+            "image": "37710801_l.png"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "2680057405",
+            "brand": 1,
+            "team": 1,
+            "name": "Arsenal Home Goalkeeper Shirt 20/21",
+            "description": "Be match day ready with this adidas Arsenal Home Goalkeeper Shirt 2020 2021 which benefits from being developed with Aeroready technology which wicks sweat away from your skin and dries quickly to maximise comfort whether you are in the stands or making match winning saves. The jersey features the clubs iconic crest so you showcase your admiration for The Gunners and the adidas branding completes the look.",
+            "price": "84.99",
+            "category": 5,
+            "rating": "4.8",
+            "image_url": "https://images.sportsdirect.com/images/products/37730603_l.jpg",
+            "image": "37730603_l.png"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "2813927324",
+            "brand": 2,
+            "team": 2,
+            "name": "Chelsea Home Goalkeeper Shirt 20/21",
+            "description": "Show your support for The Blues all-season long with this Chelsea Home Goalkeeper Shirt for the 20/21 season by Nike. The jersey benefits from being crafted with Nike Breathe fabric and Dri-Fit technology to keep you feeling cool, dry and comfortable by delivering fast drying moisture management and exceptional breathability, while the team crest and Nike Swoosh branding completes the look.",
+            "price": "65.99",
+            "category": 5,
+            "rating": "4.2",
+            "image_url": "https://images.sportsdirect.com/images/products/37808616_l.jpg",
+            "image": "37808616_l.png"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "1947109399",
+            "brand": 3,
+            "team": 3,
+            "name": "Newcastle Home Goalkeeper Shirt 20/21",
+            "description": "This Puma Newcastle United Home Goalkeeper Shirt 2020 2021 has been developed with dryCELL technology which wicks sweat away from your skin to keep you feeling fresh and comfortable. The jersey features the clubs crest on the chest so you can showcase your support for The Magpies with pride and the all-over print completes the look.",
+            "price": "54.99",
+            "category": 5,
+            "rating": "3.8",
+            "image_url": "https://images.sportsdirect.com/images/products/37106916_l.jpg",
+            "image": "37106916_l.png"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "1309764221",
+            "brand": 2,
+            "team": 4,
+            "name": "Liverpool Home Goalkeeper Shirt 20/21",
+            "description": "This LFC Home Goalkeeper Shirt for the 20/21 season by Nike has been developed with Nike Breathe fabric and Dri-Fit technology which keeps you feeling comfortable by delivering fast drying moisture management and cooling breathability. The jersey features the clubs crest so you can cheer on the 19/20 league champions with pride and the Nike Swoosh branding completes the look.",
+            "price": "62.99",
+            "category": 5,
+            "rating": "4.5",
+            "image_url": "https://images.sportsdirect.com/images/products/37829102_l.jpg",
+            "image": "37829102_l.png"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "4188073109",
+            "brand": 1,
+            "team": 6,
+            "name": "Manchester United Home Goalkeeper Shirt 20/21",
+            "description": "Cheer on The Red Devils with this Manchester United Goalkeeper Shirt from the 20/21 campaign. The jersey has been developed with Aeroready technology which absorbs moisture and dries quickly to keep you feeling fresh and comfortable, while the team crest and adidas branding completes the on-pitch look so you can live and breathe every save.",
+            "price": "84.99",
+            "category": 5,
+            "rating": "4.8",
+            "image_url": "https://images.sportsdirect.com/images/products/37724102_l.jpg",
+            "image": "37724102_l.png"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "1351468877",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Home Goalkeeper Shirt 20/21",
+            "description": "This Manchester City Home Goalkeeper Shirt by Puma has been crafted with dryCELL technology which wicks sweat away from the skin and dries quickly to maximise your comfort and performance. The jersey features the clubs iconic crest proudly located on the chest so you can show that your heart belongs to The Cityzens, while the graphic print detailing and Puma branding completes the look.",
+            "price": "72.99",
+            "category": 5,
+            "rating": "4.2",
+            "image_url": "https://images.sportsdirect.com/images/products/37846716_l.jpg",
+            "image": "37846716_l.png"
+        }
     }
       
 ]
