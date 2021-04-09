@@ -34,7 +34,7 @@
                             <a href="" class="dropdown-item">By Price</a>
                             <a href="" class="dropdown-item ">By Rating</a>
                             <a href="" class="dropdown-item ">By Category</a>
-                            <a href="" class="dropdown-item">All Products</a>
+                            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown pl-2">
@@ -42,10 +42,12 @@
                         Kits
                         </a>
                         <div class="dropdown-menu">
-                            <a href="" class="dropdown-item">Home Kits</a>
-                            <a href="" class="dropdown-item ">Away Kits</a>
-                            <a href="" class="dropdown-item ">Third kits</a>
-                            <a href="" class="dropdown-item">Training</a>
+                            <a href="{% url 'products' %}?category=home_kits" class="dropdown-item">Home Kits</a>
+                            <a href="{% url 'products' %}?category=away_kits" class="dropdown-item ">Away Kits</a>
+                            <a href="{% url 'products' %}?category=third_kits" class="dropdown-item ">
+                                Third kits
+                            </a>
+                            <a href="{% url 'products' %}?category=training" class="dropdown-item">Training</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown pl-2">
