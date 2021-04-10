@@ -91,6 +91,25 @@
 {% endblock %}
 
 {% block content %}
+{% for c in current_categories %}
+<div class="container category-header text-font mt-5">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="mt-3 mb-3 text-white">{{ c.friendly_name }}</h2>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% for t in current_team %}
+<div class="container category-header text-font mt-5">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="mt-3 mb-3 text-white">{{ t.friendly_name }}</h2>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
 <div class="container mb-5">
     <div class="row">
         {% for product in products %}

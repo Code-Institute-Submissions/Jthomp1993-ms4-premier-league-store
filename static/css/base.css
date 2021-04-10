@@ -121,6 +121,11 @@ footer p {
     border-radius: 3px;
 }
 
+.category-header {
+    background-image: linear-gradient(to top right, #EA2979, #7E1053);
+    box-shadow: 5px 4px 4px #aaaaaa;
+}
+
 
 
 
