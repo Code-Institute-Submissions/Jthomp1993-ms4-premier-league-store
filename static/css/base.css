@@ -107,6 +107,16 @@ footer p {
     background-color: #00ff87;
 }
 
+.btn-solid {
+    background-color: #37003c;
+}
+
+.btn-green {
+    background-color: #00ff87;
+}
+
+
+
 .page-header {
     background-image: linear-gradient(to top right, #F72533, #F9451B);
 }
