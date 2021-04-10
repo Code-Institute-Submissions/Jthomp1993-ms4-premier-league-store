@@ -183,13 +183,18 @@
         {% endfor %}
     </div>
 </div>
+<div class="to-top-btn btn-purple shadow-sm rounded-0">
+    <a class="to-top-link d-flex h-100">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>	
+</div>
 {% endblock %}
 
 <!-- Code taken from the Code Institute - Boutique Ado Project. -->
 {% block postloadjs %}
     {{ block.super }}
     <script type="text/javascript">
-		$('.btt-link').click(function(e) {
+		$('.to-top-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
 	</script>
