@@ -12,50 +12,7 @@
 {% endblock %}
 
 {% block content %}
-<!-- Shopping cart content for mobile devices -->
-{% if cart_items %}
-<div class="container-fluid d-block d-md-none mt-5">
-    {% for item in cart_items %}
-    <div class="row text-font text-color">
-        <div class="col-4">
-            <img class="cart-image-sm" src="{{ item.product.image.url }}" alt="">
-        </div>
-        <div class="col-8">
-                <p><strong>{{ item.product.brand.friendly_name|upper }}</strong></p>
-                <p><strong>{{ item.product.name }}</strong></p>
-                <p>Size:</p>
-                <p>SKU: {{ item.product.sku }}</p>
-                <p>Qty:</p>
-                <p>Subtotal:</p>
-        </div>
-        
-    </div>
-    <hr>
-    {% endfor %}
-    <div class="row mt-3 mb-5">
-        <div class="col-12">
-            <h6 class="pt-2">Bag Total: £{{ total|floatformat:2 }}</h6>
-            <h6 class="pt-2">Delivery: £{{ delivery|floatformat:2 }}</h6>
-            <h5 class="pt-3"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h5>
-            <a class="btn checkout-btn text-white" href="">
-                <span class="text-bold">Go to secure checkout <i class="fas fa-unlock-alt"></i></span>
-            </a>
-            <a class="btn btn-purple mt-2" href="">
-                <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
-            </a>
-        </div>
-    </div>
-</div>
-{% else %}
-    <div class="container empty-cart-sm mt-5 d-block d-md-none">
-        <h2 class="text-font text-color">Your cart is empty.</h2>
-        <hr>
-        <a class="btn btn-purple mt-2 mb-5" href="">
-            <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
-        </a>
-    </div>
-{% endif %}
-
+{% include 'includes/mobile-cart.html' %}
 <!-- Shopping cart content for medium screen sizes and up -->
 {% if cart_items %}
 <div class="container mt-5 mb-5 d-none d-md-block">
@@ -97,7 +54,7 @@
                 <h6 class="pt-2">Bag Total: £{{ total|floatformat:2 }}</h6>
                 <h6 class="pt-2">Delivery: £{{ delivery|floatformat:2 }}</h6>
                 <h5 class="pt-3"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h5>
-                <a class="btn btn-purple" href="">
+                <a class="btn btn-purple" href="{% url 'products' %}">
                     <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
                 </a>
                 <a class="btn checkout-btn text-white" href="">
@@ -111,7 +68,7 @@
     <div class="container empty-cart-md mt-5 d-none d-md-block">
         <h2 class="text-font text-color">Your cart is empty.</h2>
         <hr>
-        <a class="btn btn-purple mt-2 mb-5" href="">
+        <a class="btn btn-purple mt-2 mb-5" href="{% url 'products' %}">
             <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
         </a>
     </div>
