@@ -12,9 +12,53 @@
 {% endblock %}
 
 {% block content %}
-    {% if cart_items %}
-    <div class="table-responsive rounded">
-        {{ cart_items }}
-    </div>
-    {% endif %}
+<div class="container mt-5 mb-5 d-none d-md-block">
+    <table class="table text-font text-bold">
+        <thead>
+            <tr>
+                <th>Product Info</th>
+                <th></th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+                <th></th>
+            </tr>
+        </thead>
+        {% for item in cart_items %}
+        <tr class="">
+            <td class="my-0">
+                <img class="cart-image" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+            </td>
+            <td class="my-0">
+                <p>{{ item.product.brand.friendly_name|upper }}</p>
+                <p>{{ item.product.name }}</p>
+                <p>Size:</p>
+                <p>SKU: {{ item.product.sku }}</p>
+            </td>
+            <td class="my-0">
+                <p>£{{ item.product.price }}</p>
+            </td>
+            <td>
+                <p>£{{ item.product.price }}</p>
+            </td>
+            <td>
+                <p>£{{ item.product.price }}</p>
+            </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="12" class="text-right">
+                <h6 class="pt-2">Bag Total: £{{ total|floatformat:2 }}</h6>
+                <h6 class="pt-2">Delivery: £{{ delivery|floatformat:2 }}</h6>
+                <h5 class="pt-3"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h5>
+                <a class="btn btn-purple" href="">
+                    <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
+                </a>
+                <a class="btn checkout-btn text-white" href="">
+                    <span class="text-bold">Go to secure checkout <i class="fas fa-unlock-alt"></i></span>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
 {% endblock %}
