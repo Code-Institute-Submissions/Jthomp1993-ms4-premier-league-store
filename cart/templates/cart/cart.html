@@ -13,6 +13,7 @@
 
 {% block content %}
 <!-- Shopping cart content for mobile devices -->
+{% if cart_items %}
 <div class="container-fluid d-block d-md-none mt-5">
     {% for item in cart_items %}
     <div class="row text-font text-color">
@@ -45,8 +46,18 @@
         </div>
     </div>
 </div>
+{% else %}
+    <div class="container empty-cart-sm mt-5 d-block d-md-none">
+        <h2 class="text-font text-color">Your cart is empty.</h2>
+        <hr>
+        <a class="btn btn-purple mt-2 mb-5" href="">
+            <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
+        </a>
+    </div>
+{% endif %}
 
 <!-- Shopping cart content for medium screen sizes and up -->
+{% if cart_items %}
 <div class="container mt-5 mb-5 d-none d-md-block">
     <table class="table text-font text-bold">
         <thead>
@@ -96,4 +107,13 @@
         </tr>
     </table>
 </div>
+{% else %}
+    <div class="container empty-cart-md mt-5 d-none d-md-block">
+        <h2 class="text-font text-color">Your cart is empty.</h2>
+        <hr>
+        <a class="btn btn-purple mt-2 mb-5" href="">
+            <span class="text-white text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
+        </a>
+    </div>
+{% endif %}
 {% endblock %}
