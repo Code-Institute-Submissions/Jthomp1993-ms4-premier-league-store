@@ -185,13 +185,29 @@ footer p {
 
 @media (min-width: 992px) {
     .empty-cart-md {
-        height: 70vh;
+        height: 80vh;
     }
 }
 
 @media (min-width: 1200px) {
     .empty-cart-md {
         height: 45vh;
+    }
+}
+
+.cart-wrapper {
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+    .cart-wrapper {
+        padding-bottom: 30rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cart-wrapper {
+        padding-bottom: 0px;
     }
 }
 
