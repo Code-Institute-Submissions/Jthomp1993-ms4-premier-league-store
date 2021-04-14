@@ -35,7 +35,7 @@
             <td class="my-0">
                 <p>{{ item.product.brand.friendly_name|upper }}</p>
                 <p>{{ item.product.name }}</p>
-                <p>Size:</p>
+                <p>Size:  {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                 <p>SKU: {{ item.product.sku }}</p>
             </td>
             <td class="my-0">
