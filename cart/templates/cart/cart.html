@@ -12,5 +12,9 @@
 {% endblock %}
 
 {% block content %}
-    
+    {% if cart_items %}
+    <div class="table-responsive rounded">
+        {{ cart_items }}
+    </div>
+    {% endif %}
 {% endblock %}
