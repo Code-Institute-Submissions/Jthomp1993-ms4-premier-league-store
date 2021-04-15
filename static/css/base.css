@@ -204,6 +204,12 @@ footer p {
     height: 60vh;
 }
 
+@media (min-width: 768px) {
+    .cart-image {
+        width: 100px;
+    }
+}
+
 @media (min-width: 992px) {
     .empty-cart-md {
         height: 80vh;
