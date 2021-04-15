@@ -50,6 +50,26 @@ a:hover {
     background-color: #e2005e;
 }
 
+.remove-item {
+    border: 1px solid #f72633;
+    color: #f72633;
+}
+
+.remove-item:hover {
+    background-color: #f72633;
+    color: #ffffff !important;
+}
+
+.update-link {
+    border: 1px solid #00bd65;
+    color: #00bd65;
+}
+
+.update-link:hover {
+    background-color: #00bd65;
+    color: #ffffff !important;
+}
+
 /* ---------------------------------------------------- Main page header */
 
 .navbar {
