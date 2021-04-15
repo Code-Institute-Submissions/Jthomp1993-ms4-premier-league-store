@@ -53,6 +53,7 @@ a:hover {
 .remove-item {
     border: 1px solid #f72633;
     color: #f72633;
+    cursor: pointer;
 }
 
 .remove-item:hover {

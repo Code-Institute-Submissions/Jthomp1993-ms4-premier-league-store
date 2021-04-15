@@ -42,7 +42,7 @@
                 <p>£{{ item.product.price }}</p>
             </td>
             <td>
-                <form class="update-form" action="{% url 'adjust_cart' item.item_id %}" method="POST">
+                <form class="update-form" id="update-form" action="{% url 'adjust_cart' item.item_id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-group w-50">
                         <div class="input-group">
@@ -53,6 +53,8 @@
                         <input type="hidden" name="product_size" value="{{ item.size }}">
                     {% endif %}
                 </form>
+                <a class="update-link btn text-font mb-5"><small>Update Cart <i class="fas fa-check"></i></small>
+                </a>
             </td>
             <td>
                 <p>£{{ item.product.price }}</p>
@@ -65,8 +67,6 @@
         {% endfor %}
         <tr>
             <td colspan="12" class="text-right">
-                <a class="update-link btn text-font mb-5"><small>Update Cart <i class="fas fa-check"></i></small>
-                </a>
                 <h6 class="pt-2">Bag Total: £{{ total|floatformat:2 }}</h6>
                 <h6 class="pt-2">Delivery: £{{ delivery|floatformat:2 }}</h6>
                 <h5 class="pt-3"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h5>
@@ -93,8 +93,11 @@
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
+        console.log("Update link clicked")
+        var form = $(this).prev('#update-form');
+        console.log(form)
         form.submit();
+
     })
 
     // Remove item and reload on click
