@@ -71,6 +71,23 @@ a:hover {
     color: #ffffff !important;
 }
 
+/* ---------------------------------------------------- Messages */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 1rem;
+    z-index: 99999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* ---------------------------------------------------- Main page header */
 
 .navbar {
