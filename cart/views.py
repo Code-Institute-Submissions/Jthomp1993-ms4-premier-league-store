@@ -25,15 +25,21 @@ def add_to_cart(request, item_id):
         if item_id in list(cart.keys()):
             if size in cart[item_id]['items_by_size'].keys():
                 cart[item_id]['items_by_size'][size] += quantity
+                messages.success(request, f'Added {product.name} to your cart.')
             else:
                 cart[item_id]['items_by_size'][size] = quantity
+                print(2)
         else:
             cart[item_id] = {'items_by_size': {size: quantity}}
+            print(3)
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
+            print(4)
         else:
             cart[item_id] = quantity
+            print(5)
+            print("Success")
             messages.success(request, f'Added {product.name} to your bag.')
 
     request.session['cart'] = cart

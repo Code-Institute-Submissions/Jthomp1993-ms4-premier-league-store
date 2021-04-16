@@ -50,14 +50,12 @@
                             </div>
                             {% if s %}
                             <h5 class="pt-2">Size:</h5>
-                            <select class="form-control w-50" aria name="product_size" id="id_product_size">
-                                <option selected>Select Size</option>
-                                <option value="xs">Xs</option>
+                            <select required class="form-control w-50" aria name="product_size" id="id_product_size">
+                                <option value="xs">XS</option>
                                 <option value="s">S</option>
-                                <option value="m">M</option>
+                                <option selected value="m">M</option>
                                 <option value="l">L</option>
-                                <option value="xl">Xl</option>
-                                <option value="xxl">Xxl</option>
+                                <option value="xl">XL</option>
                             </select>
                             {% endif %}
                         </div>
@@ -77,4 +75,8 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
 {% endblock %}

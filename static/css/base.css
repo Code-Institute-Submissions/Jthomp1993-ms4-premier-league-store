@@ -99,10 +99,10 @@ a:hover {
 
 /* ---------------------------------------------------- Messages */
 
-.message-container {
+.messages-container {
     position: fixed;
-    top: 72px;
-    right: 1rem;
+    top: 100px;
+    right: 15px;
     z-index: 99999999;
 }
 
@@ -227,6 +227,7 @@ footer p {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 /* ---------------------------------------------------- Cart page */
