@@ -750,6 +750,22 @@
             "image_url": "https://images.sportsdirect.com/images/products/37846716_l.jpg",
             "image": "37846716_l.png"
         }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "9366273812",
+            "brand": 3,
+            "team": 7,
+            "name": "Manchester City Football Backpack",
+            "description": "This Team Football Backpack features a large main zipped compartment, small zip pockets, mesh pockets and a team crest to the front so you can show off your support for your favourite side. It can be carried using either the adjustable shoulder straps or carry handle to the top.",
+            "price": "12.99",
+            "category": 6,
+            "rating": "4.0",
+            "image_url": "https://images.sportsdirect.com/images/products/71031408_l.jpg",
+            "image": "71031408_l.png"
+        }
     }
       
 ]

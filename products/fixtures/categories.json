@@ -38,5 +38,13 @@
             "name": "goalkeeper",
             "friendly_name": "Goalkeeper"
         }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "merchandise",
+            "friendly_name": "Merchandise"
+        }
     }
 ]
