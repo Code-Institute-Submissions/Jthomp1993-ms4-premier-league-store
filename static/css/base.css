@@ -30,7 +30,17 @@ a:hover {
 }
 
 .btn-purple:hover {
-    background-color: #860092;
+    background-color: #00ff87;
+}
+
+.btn-purple-outline {
+    border: 1px solid #37003c;
+    color: #37003c !important;
+}
+
+.btn-purple-outline:hover {
+    background-color: #37003c;
+    color: #ffffff !important;
 }
 
 .btn-solid {
@@ -38,7 +48,13 @@ a:hover {
 }
 
 .btn-green {
-    background-color: #00ff87;
+    background-color: #00ca6c;
+    color: #ffffff !important;
+}
+
+.btn-green:hover {
+    border: 1px solid #00ca6c;
+    color: #00ca6c;
 }
 
 .checkout-btn {
@@ -48,6 +64,16 @@ a:hover {
 .checkout-btn:hover {
     color: #ffffff !important;
     background-color: #e2005e;
+}
+
+.btn-pink-outline {
+    border: 1px solid #e2005e;
+    color: #e2005e !important;
+}
+
+.btn-pink-outline:hover {
+    background-color: #e2005e;
+    color: #ffffff !important;
 }
 
 .remove-item {

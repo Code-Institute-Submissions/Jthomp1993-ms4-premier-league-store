@@ -62,10 +62,12 @@
                             {% endif %}
                         </div>
                         <div class="col-12 pt-3">
-                            <a class="btn-solid btn-lg btn-style text-font" href="{% url 'products' %}">
-                                Back To Store
+                            <a class="btn btn-purple-outline" href="{% url 'products' %}">
+                                <span class="text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
                             </a>
-                            <button type="submit" class="btn-green btn-lg border-0 rounded-1 ml-2">Add To Cart</button>
+                            <button type="submit" class="btn-green btn border-0 text-bold rounded-1 ml-2">
+                                <span>Add To Cart</span>
+                            </button>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         {% endwith %}
