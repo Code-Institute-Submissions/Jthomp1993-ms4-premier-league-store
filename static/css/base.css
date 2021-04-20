@@ -288,18 +288,8 @@ footer p {
     }
 }
 
-/* ---------------------------------------------------- Checkout page */
 
-#payment-form .form-control,
-#card-element {
-    color: #2f2f2f;
-    border: 1px solid #2f2f2f;
-}
 
-.fieldset-label {
-    position: relative;
-    right: .5rem;
-}
 
 
 
