@@ -16,13 +16,13 @@
 <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-12 text-font col-lg-6 order-lg-last mb-5">
-            <p class="mb-5">Order Summary ({{ product_count }})</p>
+            <h6 class="mb-5 text-color">Order Summary ({{ product_count }})</h6>
             <div class="row">
                 <div class="col-7 offset-2">
-                    <h5 class="mb-1 mt-0 text-muted">Item</h5>
+                    <p class="mb-1 mt-0">Item</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    <p class="mb-1 mt-0">Subtotal</p>
                 </div>
             </div>
             <hr>
@@ -33,29 +33,29 @@
                             {% if item.product.image %}
                                 <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                             {% else %}
-                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                <img class="w-100" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
                             {% endif %}
                         </a>
                     </div>
                     <div class="col-7">
-                        <p class="my-0"><strong>{{ item.product.brand.friendly_name }}</strong></p>
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                        <p class="my-0 small">Qty: {{ item.quantity }}</p>
+                        <p class="my-0 text-font text-color"><strong>{{ item.product.brand.friendly_name }}</strong></p>
+                        <p class="my-0 text-font text-color"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 text-font text-color small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                        <p class="my-0 small text-font text-color">Qty: {{ item.quantity }}</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">
+                        <p class="my-0 small text-font text-color">
                             £{{ item.product.price | calc_subtotal:item.quantity }}
                         </p>
                     </div>
                 </div>
                 <hr>
             {% endfor %}
-            <div class="row text-color text-right">
+            <div class="row text-color text-font text-right">
                 <div class="col-7 offset-2">
                     <p class="my-0">Order Total:</p>
                     <p class="my-0">Delivery:</p>
-                    <p class="my-0">Grand Total:</p>
+                    <p class="my-0 text-bold">Grand Total:</p>
                 </div>
                 <div class="col-3">
                     <p class="my-0">£{{ total | floatformat:2 }}</p>
@@ -99,7 +99,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="px-3">
-                    <legend class="fieldset-label small text-font text-color px-2 w-auto">Payment</legend>
+                    <legend class="fieldset-label text-font text-color px-2 w-auto">Payment</legend>
                     <!-- Stripe card element -->
                     <div class="mb-3" id="card-element"></div>
 

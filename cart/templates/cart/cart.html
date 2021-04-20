@@ -68,7 +68,7 @@
         {% endfor %}
         <tr>
             <td colspan="12" class="text-right">
-                <h6 class="pt-2">Bag Total: £{{ total|floatformat:2 }}</h6>
+                <h6 class="pt-2">Cart Total: £{{ total|floatformat:2 }}</h6>
                 <h6 class="pt-2">Delivery: £{{ delivery|floatformat:2 }}</h6>
                 <h5 class="pt-3"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h5>
                 <a class="btn btn-purple-outline" href="{% url 'products' %}">
