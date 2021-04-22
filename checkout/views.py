@@ -30,6 +30,7 @@ def checkout(request):
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
+        print(order_form)
         if order_form.is_valid():
             order = order_form.save()
             for item_id, item_data in cart.items():
@@ -68,21 +69,6 @@ def checkout(request):
         cart = request.session.get('cart', {})
         if not cart:
             messages.error(request, "There's nothing in your cart at the moment")
-            return redirect(reverse('products'))
-
-        current_cart = cart_contents(request)
-        total = current_cart['grand_total']
-        stripe_total = round(total * 100)
-        stripe.api_key = stripe_secret_key
-        intent = stripe.PaymentIntent.create(
-            amount=stripe_total,
-            currency=settings.STRIPE_CURRENCY,
-        )
-
-    else:
-        cart = request.session.get('cart', {})
-        if not cart:
-            messages.error(request, "There's nothing in your cart at the moment.")
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)
