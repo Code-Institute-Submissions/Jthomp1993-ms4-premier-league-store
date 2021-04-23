@@ -58,3 +58,13 @@
 .header-image {
   width: 200px;
 }
+
+select,
+select option {
+    color: #2f2f2f;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
