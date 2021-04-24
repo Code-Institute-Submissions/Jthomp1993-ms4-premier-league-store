@@ -32,9 +32,15 @@
             <p class="text-font text-color mb-3">Your order information is below. A confirmation email will be sent
                 to <strong>{{ order.email }}</strong>
             </p>
-            <a class="btn btn-purple-outline" href="{% url 'products' %}">
-                <span class="text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
-            </a>
+            {% if from_profile %}
+                <a class="btn btn-purple-outline" href="{% url 'profile' %}">
+                    <span class="text-bold"><i class="fas fa-chevron-left"></i> Back to profile</span>
+                </a>
+            {% else %}
+                <a class="btn btn-purple-outline" href="{% url 'products' %}">
+                    <span class="text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
+                </a>
+            {% endif %}
         </div>
     </div>
 </div>
