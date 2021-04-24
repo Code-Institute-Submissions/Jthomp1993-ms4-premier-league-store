@@ -10,6 +10,10 @@
     color: #2f2f2f;
 }
 
+.text-purple {
+    color: #37003c;
+}
+
 .text-white {
     color: #ffffff;
 }
@@ -288,6 +292,16 @@ footer p {
     }
 }
 
+/* ---------------------------------------------------- All Auth */
+
+.header-container {
+    background-color: #e5e5e5;
+    box-shadow: 5px 4px 4px #aaaaaa;
+}
+
+.sign-up {
+    color: #2f2f2f !important;
+}
 
 
 
