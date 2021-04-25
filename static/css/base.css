@@ -359,6 +359,19 @@ footer p {
 
 .news-detail-header {
     margin-top: 100px;
+    background-image: linear-gradient(to top right, #7E1053, #EA2979);
+}
+
+@media (min-width: 768px) {
+    .news-detail-image {
+        width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .news-detail-image {
+        width: 600px;
+    }
 }
 
 

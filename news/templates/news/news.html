@@ -21,11 +21,15 @@
     {% for n in news %}
     <div class="row">
             <div class="col-12 col-md-5">
-                <img class="news-image" src="{{ n.image.url }}" alt="{{ n.title }}">
+                <a href="{% url 'news_detail' n.id %}">
+                    <img class="news-image" src="{{ n.image.url }}" alt="{{ n.title }}">
+                </a>
             </div>
             <div class="col-12 col-md-7 news-content">
-                <h5 class="text-font text-purple"><strong>{{ n.title }}</strong></h5>
-                <p class="text-font text-color news-description mt-2">{{ n.description }}</p>
+                <a href="{% url 'news_detail' n.id %}">
+                    <h5 class="text-font text-purple"><strong>{{ n.title }}</strong></h5>
+                    <p class="text-font text-color news-description mt-2">{{ n.description }}</p>
+                </a>
             </div>
         </div>
         <div class="row">

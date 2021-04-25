@@ -8,17 +8,36 @@
 
 {% block page_header %}
     <div class="container-fluid news-detail-header">
-        <div class="row">
-            <div class="col-12">
-                <img class="news-detail-image mt-4 mb-2" src="{{ news.image.url }}" alt="">
-            </div>
-            <div class="col-12">
-                <h6 class="text-font text-color">{{ news.title }}</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="news-detail-image mt-4 mb-2" src="{{ news.image.url }}" alt="">
+                </div>
+                <div class="col-12">
+                    <h4 class="text-font text-white mb-4 text-bold mt-2">{{ news.title }}</h4>
+                </div>
             </div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
-
+<div class="container news-detail-wrapper">
+    <div class="row">
+        <div class="col-12">
+            <h5 class="text-font text-purple text-bold mt-3">{{ news.heading }}</h5>
+        </div>
+        <div class="col-12">
+            <p class="text-font text-color mt-4">{{ news.content }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center mb-4 mt-4">
+            <a class="btn btn-pink-outline text-white" 
+                href="{% url 'news' %}">
+                <span class="text-bold">Back to news</span>
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock %}
