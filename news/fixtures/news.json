@@ -1,0 +1,86 @@
+[
+    {
+        "pk": 1,
+        "model": "news.news",
+        "fields": {
+            "title": "English football announces social media boycott",
+            "heading": "All sides of the game to unite for a boycott from Facebook, Twitter and Instagram from 30 April to 3 May",
+            "description": "The FA, Premier League, EFL, FA Women's Super League, FA Women's Championship, PFA, LMA, PGMOL, Kick It Out, Women in Football and the FSA will unite for a social media boycott from 15:00 BST on Friday 30 April to 23:59 BST on Monday 3 May.",
+            "content": "The FA, Premier League, EFL, FA Women's Super League, FA Women's Championship, PFA, LMA, PGMOL, Kick It Out, Women in Football and the FSA will unite for a social media boycott from 15:00 BST on Friday 30 April to 23:59 BST on Monday 3 May, in response to the ongoing and sustained discriminatory abuse received online by players and many others connected to football. This has been scheduled to take place across a full-fixture programme in the men's and women's professional game and will feature clubs across the Premier League, EFL, WSL and Women's Championship switching off their Facebook, Twitter and Instagram accounts. As a collective, the game recognises the considerable reach and value of social media to our sport. The connectivity and access to supporters who are at the heart of football remains vital. However, the boycott shows English football coming together to emphasise that social media companies must do more to eradicate online hate, while highlighting the importance of educating people in the ongoing fight against discrimination. In our letter of February 2021, English football outlined its requests of social media companies, urging filtering, blocking and swift takedowns of offensive posts, an improved verification process and re-registration prevention, plus active assistance for law enforcement agencies to identify and prosecute originators of illegal content. While some progress has been made, we reiterate those requests today in an effort to stem the relentless flow of discriminatory messages and ensure that there are real-life consequences for purveyors of online abuse across all platforms. Boycott action from football in isolation will, of course, not eradicate the scourge of online discriminatory abuse, but it will demonstrate that the game is willing to take voluntary and proactive steps in this continued fight.",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/24/2ad8324f-a2ca-4026-b962-3c91806f8463/NRFR-Statement-graphic-PL-PGMOL-FA-EFL-WSL-WC-PFA-LMA-KIO-FSA-WIF.png?width=930&height=620",
+            "image": "img_93628.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "news.news",
+        "fields": {
+            "title": "GW33 FPL stats: Mixed emotions for Salah backers",
+            "heading": "Liverpool star scores against Newcastle but missed out on a big haul",
+            "description": "Mohamed Salah (£12.6m) was the most-captained player in Fantasy Premier League for the 10th time this season but a goal may not have been enough to satisfy his backers.",
+            "content": "Mohamed Salah (£12.6m) was the most-captained player in Fantasy Premier League for the 10th time this season but a goal may not have been enough to satisfy his backers. The Egyptian made the perfect start, scoring after just three minutes, but the 1.3million FPL managers who handed him the armband may well feel their captain missed out on a much bigger haul. Salah missed two big chances while also laying on a big chance for Sadio Mane (£11.7m), which also went begging. So far in 2020/21, a total of 35million Fantasy managers have handed Salah the armband. No player has been a more popular choice. The Leicester City duo of Jamie Vardy (£10.3m) and Kelechi Iheanacho (£6.2m) have replaced Kane in the estimation of the leading 100 FPL managers, with the Foxes hosting Crystal Palace on Monday. Since Gameweek 26, the pair have formed an effective partnership up front. No player has created more big chances than Vardy's five, while none has received more big chances than Iheanacho's eight. Vardy and Iheanacho were the two most-bought players ahead of the deadline, with Trent Alexander-Arnold (£7.5m) completing the top three. Iheanacho's ownership has rocketed over the last eight Gameweeks, during which he has eight goals. From an ownership of just 24,687, the Nigerian is now in over 1.7million teams. Alexander-Arnold had also been in excellent form, returning 40 points in his previous four matches. But his new backers were left disappointed after Newcastle United scored in stoppage time to limit the right-back to a two-point return. The three most-sold players this Gameweek are all without a fixture. The next Premier League match for Kane and Son Heung-min (£9.5m) is in Gameweek 34, while Manchester City's John Stones (£5.1m) is suspended until Gameweek 36.",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/24/5b05ff73-53fd-41b8-bdf9-5bbf0115fdba/2021-04-24T113726Z_86536688_UP1EH4O0WACQH_RTRMADP_3_SOCCER-ENGLAND-LIV-NEW-REPORT.JPG?width=931&height=620",
+            "image": "img_83746.png"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "news.news",
+        "fields": {
+            "title": "Newcastle target a rare hat-trick of victories",
+            "heading": "Newcastle are aiming to win three PL matches in a row for the first time since November 2018, when Rafael Benitez was in charge.",
+            "description": "Liverpool are unbeaten in their last 24 PL home matches against Newcastle United (W20 D4), last losing in April 1994. Trent Alexander-Arnold has the chance to score or assist in a fourth consecutive PL match for the first time since August 2019.",
+            "content": "Liverpool manager Jurgen Klopp revealed Diogo Jota is 'fine', while Curtis Jones is also available after recovering from a muscle injury. But Nat Phillips (hamstring) isn't ready to return.Steve Bruce revealed Allan Saint-Maximin and Callum Wilson are both fit, but the weekend may come too soon for Fabian Schar, who is back in training following a knee injury. Karl Darlow has undergone a knee operation and is out for a few weeks. Liverpool are unbeaten in their last 24 PL home matches against Newcastle United (W20 D4), last losing in April 1994. Trent Alexander-Arnold has the chance to score or assist in a fourth consecutive PL match for the first time since August 2019. Newcastle are aiming to win three PL matches in a row for the first time since November 2018, when Rafael Benitez was in charge. The Magpies have won 37 per cent of their PL matches when Allan Saint-Maximin has played this season (7/19), compared to just 15 per cent without him (2/13).",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/21/8dd35630-0686-4771-b126-5bd73a43f958/Allan-Saint-Maximin.jpg?width=930&height=620",
+            "image": "img_92674.png"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "news.news",
+        "fields": {
+            "title": "Tuchel can set club record as top-four rivals meet",
+            "heading": "Thomas Tuchel revealed that Edouard Mendy will start in goal for Chelsea.",
+            "description": "Thomas Tuchel can be the first Chelsea head coach to go unbeaten in his first 10 away matches in all competitions.",
+            "content": "Jesse Lingard has been declared fit by West Ham United after suffering no ill-effects from the cramp that forced him off in the defeat at Newcastle United last time out. Aaron Cresswell (hamstring) will be monitored but Craig Dawson is ruled out through suspension. Thomas Tuchel revealed that Edouard Mendy will start in goal for Chelsea, with Kepa Arrizabalaga dropping out after  starting the last two matches in all competitions. Mateo Kovacic (hamstring) remains out for the Blues. West Ham have secured 31 points in home matches this season, second only to Manchester City's 38. The Hammers are now looking to achieve a 10th home win in a PL season for the first time since 2001/02, when they managed 12. Jesse Lingard can be the second West Ham player to score in six successive Premier League appearances, after Diafra Sakho did so in September and October 2014. Thomas Tuchel can be the first Chelsea head coach to go unbeaten in his first 10 away matches in all competitions.Chelsea are looking for their eighth PL double over West Ham, a feat they have only managed so far against Man City (10), Sunderland (8) and Spurs (8).",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/21/cfa4da20-8393-4010-91b1-b8b75300d222/Thomas-Tuchel.jpg?width=930&height=620",
+            "image": "img_10378.png"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "news.news",
+        "fields": {
+            "title": "Spurs stadium hosting COVID-19 vaccinations",
+            "heading": "Club are the latest to provide their facilities in the fight against coronavirus",
+            "description": "On Saturday Tottenham Hotspur Stadium became a COVID-19 vaccination clinic to help the people of the local community in north London during the pandemic. ",
+            "content": "On Saturday Tottenham Hotspur Stadium became a COVID-19 vaccination clinic to help the people of the local community in north London during the pandemic. The clinic was set up to provide about 2,000 vaccinations to local people aged 45 or above. It is the latest way in which the club have offered the stadium to help the NHS in the fight against coronavirus. A year ago, the indoor car park became a COVID-19 testing centre, while dressing rooms, medical and media facilities were transformed to host North Middlesex University Hospital’s Women’s Outpatient services. More than 41,500 appointments were delivered at the stadium up to July 2020. Spurs are just the latest Premier League club to offer their stadium to help vaccinations. Aston Villa, Crystal Palace, Leeds United, Liverpool and Manchester City have allowed their facilities to become vaccination centres, while Brighton & Hove Albion and Manchester United's stadiums have hosted vaccination training. ",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/24/50fc0393-123f-495c-8139-acfb107c1d02/WAOT-Spurs-stadium-vaccination-centre-Apr-21.jpg?width=930&height=620",
+            "image": "img_82416.png"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "news.news",
+        "fields": {
+            "title": "Milner breaks Crouch record for substitute appearances",
+            "heading": "Liverpool midfielder comes on for a landmark 159th time in the draw with Newcastle",
+            "description": "It was a frustrating match for James Milner as Liverpool drew 1-1 with his former side Newcastle United but the 35-year-old did break a Premier League record when he came off the bench in the 58th minute.",
+            "content": "It was a frustrating match for James Milner as Liverpool drew 1-1 with his former side Newcastle United but the 35-year-old did break a Premier League record when he came off the bench in the 58th minute. Milner's 159th appearance as a substitute moved him one ahead of the record that had been held by Peter Crouch, who was quick to congratulate the new leader on Twitter. The record is perhaps under threat from Southampton striker Shane Long, who is 11 substitute appearances back but on loan at AFC Bournemouth at the moment. Long is one ahead of Jermain Defoe, who holds the record for the most goals off the bench, with 24. In joint-seventh in the ranking is Theo Walcott, who holds the record for having been substituted the most times. Walcott has been replaced 150 times during his spells at Arsenal, Everton and Southampton.",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/24/0e8987ec-e12f-4afc-b28c-635534c5f6b2/James-Milner-LIVNEW-20-21.jpg?width=930&height=620",
+            "image": "img_01846.png"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "news.news",
+        "fields": {
+            "title": "Watford promoted back to the Premier League",
+            "heading": "Hornets secure immediate return thanks to their 1-0 win over Millwall in the Championship",
+            "description": "Watford have secured automatic promotion to the Premier League for the 2021/22 season after a one-year absence. Xisco Munoz's side made sure of a top-two spot with a 1-0 home victory over Millwall, thanks to Ismaila Sarr's 11th-minute penalty.",
+            "content": "Watford have secured automatic promotion to the Premier League for the 2021/22 season after a one-year absence. Xisco Munoz's side made sure of a top-two spot with a 1-0 home victory over Millwall, thanks to Ismaila Sarr's 11th-minute penalty. It is a first-time return to the top flight for the Hornets, having been relegated in 2019/20. Watford will join Norwich City in the 2021/22 Premier League after the Canaries secured their own immediate return last week. It is the first time since 2009/10 that two relegated sides have sealed automatic promotion the next season. The 2021/22 campaign will be Watford's eighth in the competition since they were first promoted in 1999/00. Their 11th-placed finish in 2018/19 remains their highest in the competition to date. The clubs who finish third to sixth in the Championship - currently Brentford, AFC Bournemouth, Barnsley and Swansea City - will compete in the playoffs to determine the third promoted club.",
+            "image_url": "https://resources.premierleague.com/photos/2021/04/24/f6b96ad1-711a-4635-94d3-c50a601144e0/Watford-promotion-cele.jpg?width=918&height=620",
+            "image": "img_017375.png"
+        }
+    }
+]
