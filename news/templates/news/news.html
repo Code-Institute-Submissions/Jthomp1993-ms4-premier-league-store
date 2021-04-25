@@ -2,6 +2,10 @@
 {% load static %}
 {% load bag_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'news/css/news.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container-fluid page-header text-font">
         <div class="row">
@@ -13,5 +17,25 @@
 {% endblock %}
 
 {% block content %}
-
+<div class="container news-wrapper mt-5">
+    {% for n in news %}
+    <div class="row mb-5">
+            <div class="col-12 col-md-5">
+                <img class="news-image" src="{{ n.image.url }}" alt="{{ n.title }}">
+            </div>
+            <div class="col-12 col-md-7 news-content">
+                <h5 class="text-font text-purple"><strong>{{ n.title }}</strong></h5>
+                <p class="text-font text-color news-description mt-2">{{ n.description }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a class="btn btn-pink-outline text-white float-right" href="">
+                    <span class="text-bold">Read more</span>
+                </a>
+            </div>
+        </div>
+        <hr class="mb-5">
+    {% endfor %}
+</div>
 {% endblock %}

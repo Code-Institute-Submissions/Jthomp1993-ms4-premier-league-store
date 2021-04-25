@@ -318,6 +318,37 @@ footer p {
 	color: #37003c;
 }
 
+/* ---------------------------------------------------- News page */
+
+.news-image {
+    width: 100%;
+    box-shadow: 5px 4px 4px #aaaaaa;
+}
+
+.news-description {
+    font-size: 12px;
+}
+
+.news-content {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .news-content {
+        margin-top: 0px;
+    }
+    .news-description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .news-description {
+        font-size: 16px;
+    }
+}
+
+
 
 
 
