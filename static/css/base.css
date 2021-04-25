@@ -241,6 +241,10 @@ footer p {
     cursor: pointer;
 }
 
+.product-info-wrapper {
+    margin-top: 100px;
+}
+
 /* ---------------------------------------------------- Cart page */
 
 .cart-image {
