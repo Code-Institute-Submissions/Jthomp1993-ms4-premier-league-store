@@ -11,7 +11,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    {% if news.image %}
+                    <a href="{{ news.image.url }}" target="blank">
                     <img class="news-detail-image mt-4 mb-2" src="{{ news.image.url }}" alt="">
+                    </a>
+                    {% else %}
+                    <a href="{{ news.image.url }}">
+                        <img class="news-detail-image mt-4 mb-2" src="{{ MEDIA_URL }}no_image.png" 
+                        alt="{{ news.title }}">
+                    </a>
+                    {% endif %}
                 </div>
                 <div class="col-12">
                     <h4 class="text-font text-white mb-4 text-bold mt-2">{{ news.title }}</h4>
