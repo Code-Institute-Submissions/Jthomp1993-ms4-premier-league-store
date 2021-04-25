@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}.
+
+Thank you for you Premier League Store order. We will let you know when your item(s) have been dispatched. 
+
+Your order information is below. 
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: £ {{ order.order_total }}
+Delivery: £ {{ order.delivery_cost }}
+Grand Total: £ {{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }}, {{ order.town_or_city }}, {{ order.country }}.
+
+If you have any further questions please feel free to contact us on {{ contact_email }}.
+
+Thank you!
+
+Premier League Store
