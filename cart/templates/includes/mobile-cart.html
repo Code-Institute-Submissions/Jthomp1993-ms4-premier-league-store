@@ -1,3 +1,4 @@
+{% load bag_tools %}
 <!-- Shopping cart content for mobile devices -->
 {% if cart_items %}
 <div class="container-fluid d-block d-md-none mt-5">
@@ -24,7 +25,7 @@
                 </form>
                 <a class="update-link btn text-font mb-5"><small>Update Cart <i class="fas fa-check"></i></small>
                 </a>
-                <p><strong>Subtotal: </strong></p>
+                <p><strong>Subtotal: £{{ item.product.price | calc_subtotal:item.quantity }} </strong></p>
                 <a class="remove-item btn text-bold text-font text-color" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><span><small>Remove Item</small> <i class="far fa-trash-alt"></i></span>
                 </a>
         </div>
