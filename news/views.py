@@ -20,10 +20,12 @@ def news_detail(request, news_id):
     """ A view to render the news detail page """
     news = get_object_or_404(News, pk=news_id)
     comments = Comments.objects.filter(news=news_id)
+    comment_form = CommentForm(data=request.POST)
 
     context = {
         'news': news,
         'comments': comments,
+        'comment_form': comment_form,
     }
 
     return render(request, 'news/news_detail.html', context)
