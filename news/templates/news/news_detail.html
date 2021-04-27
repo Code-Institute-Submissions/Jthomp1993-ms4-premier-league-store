@@ -80,6 +80,7 @@
 </div>
 
 <div class="container mt-5">
+    {% if comments.count > 0 %}
     {% for comment in comments %}
     <div class="row">
         <div class="col-12 col-md-8">
@@ -102,7 +103,10 @@
         </div>
     </div>
     <hr>
-    {% endfor %}  
+    {% endfor %}
+    {% else %}
+    <p class="text-font text-color">There are no comments for this article yet.</p>
+    {% endif %}
 </div>
 
 {% endblock %}
