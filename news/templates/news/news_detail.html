@@ -2,10 +2,6 @@
 {% load static %}
 {% load bag_tools %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'news/css/news.css' %}">
-{% endblock %}
-
 {% block page_header %}
     <div class="container-fluid news-detail-header">
         <div class="container">
@@ -50,6 +46,21 @@
     </div>
 </div>
 
+<div class="container header-container mb-5 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3 text-center">
+            <h4 class="text-font text-color mt-4 mb-4 text-bold text-purple">
+                Add a comment
+            </h4>
+            <form class="mb-4" method="POST" action="{% url 'add_comment' news.pk %}">
+                {% csrf_token %}
+                {{ comment_form|crispy }}
+                <button class="btn btn-pink-outline" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 <div class="container category-header text-font mt-5">
     <div class="row">
         <div class="col-6">
@@ -58,14 +69,19 @@
     </div>
 </div>
 
+{% if request.user.is_authenticated %}
 <div class="container mt-4">
+    {% for comment in comments %}
     <div class="row">
         <div class="col-12 col-md-8">
-            <h5 class="text-font text-purple text-bold">Jthompo1993</h5>
-            <h6 class="text-font text-muted mt-3">30th March 2021</h6>
-            <p class="text-font text-color mt-3">One of the Premier League's all-time greats, Sergio Aguero set to leave Man City at the end of the season. What a player. He's been an absolute joy to watch</p>
+            <h5 class="text-font text-purple text-bold">{{ comment.user }}</h5>
+            <h6 class="text-font text-muted mt-3">{{ comment.date_time }}</h6>
+            <p class="text-font text-color mt-3">{{ comment.comment }}</p>
         </div>
     </div>
     <hr>
+    {% endfor %}
+    
 </div>
+{% endif %}
 {% endblock %}

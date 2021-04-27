@@ -16,11 +16,11 @@ class CommentsAdmin(admin.ModelAdmin):
     list_display = (
         'news',
         'user',
-        'comment',
         'date_time',
+        'comment',
     )
 
 
 admin.site.register(News, NewsAdmin,)
-admin.site.register(Comments)
+admin.site.register(Comments, CommentsAdmin)
 
