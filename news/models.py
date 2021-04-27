@@ -27,7 +27,7 @@ class Comments(models.Model):
 
     class Meta:
         verbose_name_plural = 'Comments'
-        ordering = ['date_time']
+        ordering = ['-date_time']
 
     def __str__(self):
         return self.comment

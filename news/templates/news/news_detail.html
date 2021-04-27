@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load bag_tools %}
 
 {% block page_header %}
     <div class="container-fluid news-detail-header">
@@ -90,7 +89,7 @@
             {% if request.user == comment.user %}
             <ul class="mt-5">
                 <li class="d-inline">
-                    <a class="update-link btn text-font"><small>
+                    <a href="{% url 'edit_comment' news.pk comment.pk %}" class="update-link btn text-font"><small>
                         Edit</small>
                     </a>
                 </li>

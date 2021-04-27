@@ -63,6 +63,35 @@ def add_comment(request, news_id):
     return render(request, template, context)
 
 
+def edit_comment(request, news_id, comment_id):
+    """ A view to edit a comment """
+    news = get_object_or_404(News, pk=news_id)
+    comment = get_object_or_404(Comments, news=news, pk=comment_id)
+    if request.user == comment.user:
+        if request.method == 'POST':
+            comment_form = CommentForm(request.POST, instance=comment)
+            if comment_form.is_valid():
+                new_comment = comment_form.save(commit=False)
+                new_comment.user = request.user
+                new_comment.news = news
+                new_comment.save()
+                messages.success(request, 'Your comment has been updated!')
+                return redirect('news_detail', news_id)
+            else:
+                messages.error(request, 'Unable to update your comment. Please ensure that the \
+                form is valid before submitting')
+
+                return redirect('news_detail', news_id)
+        else:
+            comment_form = CommentForm(instance=comment)
+            context = {
+                'comment_form': comment_form,
+            }
+            return render(request, 'news/edit_comment.html', context)
+    else:
+        return redirect('news_detail', news_id)
+
+
 def delete_comment(request, news_id, comment_id):
     """ A view to delete a comment """
     news = get_object_or_404(News, pk=news_id)
@@ -78,3 +107,4 @@ def delete_comment(request, news_id, comment_id):
 # Sources of guidance used to create this code
 
 # https://djangocentral.com/creating-comments-system-with-django/
+# https://github.com/machikolacey/composermlacey/blob/master/products/views.py
