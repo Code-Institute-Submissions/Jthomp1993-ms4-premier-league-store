@@ -4,6 +4,8 @@ from django.contrib import messages
 from .models import News, Comments
 from .forms import CommentForm
 
+from django.contrib.auth.decorators import login_required
+
 
 def view_news(request):
     """ A view to render the news page """
@@ -31,6 +33,7 @@ def news_detail(request, news_id):
     return render(request, 'news/news_detail.html', context)
 
 
+@login_required
 def add_comment(request, news_id):
     """ A view to add a comment to a news article """
     news = get_object_or_404(News, pk=news_id)
@@ -65,6 +68,7 @@ def add_comment(request, news_id):
     return render(request, template, context)
 
 
+@login_required
 def edit_comment(request, news_id, comment_id):
     """ A view to edit a comment """
     news = get_object_or_404(News, pk=news_id)
@@ -94,6 +98,7 @@ def edit_comment(request, news_id, comment_id):
         return redirect('news_detail', news_id)
 
 
+@login_required
 def delete_comment(request, news_id, comment_id):
     """ A view to delete a comment """
     news = get_object_or_404(News, pk=news_id)
