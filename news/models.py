@@ -6,7 +6,7 @@ class News(models.Model):
     class Meta:
         verbose_name_plural = 'News'
 
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=120)
     heading = models.CharField(max_length=100, null=False, blank=False)
     description = models.TextField(max_length=254, null=False, blank=False)
     content = models.TextField(null=False, blank=False)

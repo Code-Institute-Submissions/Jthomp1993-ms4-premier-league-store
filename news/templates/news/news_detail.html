@@ -33,7 +33,7 @@
             <h5 class="text-font text-purple text-bold mt-3">{{ news.heading }}</h5>
         </div>
         <div class="col-12">
-            <p class="text-font text-color mt-4">{{ news.content }}</p>
+            <p class="text-font text-color mt-4">{{ news.content | linebreaks }}</p>
         </div>
     </div>
     <div class="row">
@@ -46,22 +46,33 @@
     </div>
 </div>
 
-<div class="container header-container mb-5 mt-5">
-    <div class="row">
-        <div class="col-12 col-md-6 offset-md-3 text-center">
-            <h4 class="text-font text-color mt-4 mb-4 text-bold text-purple">
-                Add a comment
-            </h4>
-            <form class="mb-4" method="POST" action="{% url 'add_comment' news.pk %}">
-                {% csrf_token %}
-                {{ comment_form|crispy }}
-                <button class="btn btn-pink-outline" type="submit">Submit</button>
-            </form>
+{% if request.user.is_authenticated %}
+    <div class="container header-container mb-5 mt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3 text-center">
+                <h4 class="text-font text-color mt-4 mb-4 text-bold text-purple">
+                    Add a comment
+                </h4>
+                <form class="mb-4" method="POST" action="{% url 'add_comment' news.pk %}">
+                    {% csrf_token %}
+                    {{ comment_form|crispy }}
+                    <button class="btn btn-pink-outline" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+    {% else %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-font text-purple"><strong>If you want to add a comment you will need to 
+                    <a class="text-pink" href="{% url 'account_login' %}">login</a>. If you don't have a Premier League account then you can sign up <a class="text-pink" href="{% url 'account_signup' %}">here.</a></strong></p>
+            </div>
+        </div>
+    </div>
+{% endif %}
 
-<div class="container category-header text-font mt-5">
+<div class="container category-header text-font mt-2">
     <div class="row">
         <div class="col-6">
             <h2 class="mt-3 mb-3 text-white">Comments</h2>
@@ -69,19 +80,30 @@
     </div>
 </div>
 
-{% if request.user.is_authenticated %}
-<div class="container mt-4">
+<div class="container mt-5">
     {% for comment in comments %}
     <div class="row">
         <div class="col-12 col-md-8">
             <h5 class="text-font text-purple text-bold">{{ comment.user }}</h5>
             <h6 class="text-font text-muted mt-3">{{ comment.date_time }}</h6>
             <p class="text-font text-color mt-3">{{ comment.comment }}</p>
+            {% if request.user == comment.user %}
+            <ul class="mt-5">
+                <li class="d-inline">
+                    <a class="update-link btn text-font"><small>
+                        Edit</small>
+                    </a>
+                </li>
+                <li class="d-inline">
+                    <a href="{% url 'delete_comment' news.pk comment.pk %}" class="remove-item btn text-bold text-font text-color"><span><small>Remove</small> <i class="far fa-trash-alt"></i></span>
+                    </a>
+                </li>
+            </ul>
+            {% endif %}
         </div>
     </div>
     <hr>
-    {% endfor %}
-    
+    {% endfor %}  
 </div>
-{% endif %}
+
 {% endblock %}

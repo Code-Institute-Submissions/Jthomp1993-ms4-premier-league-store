@@ -38,7 +38,7 @@ def add_comment(request, news_id):
         comment_form = CommentForm(data=request.POST)
         comments = Comments.objects.filter(news=news_id)
         if comment_form.is_valid():
-            new_comment = CommentForm.save(commit=False)
+            new_comment = comment_form.save(commit=False)
             new_comment.user = request.user
             new_comment.news = news
             new_comment.save()
@@ -61,6 +61,18 @@ def add_comment(request, news_id):
     }
 
     return render(request, template, context)
+
+
+def delete_comment(request, news_id, comment_id):
+    """ A view to delete a comment """
+    news = get_object_or_404(News, pk=news_id)
+    comment = get_object_or_404(Comments, news=news, pk=comment_id)
+
+    if request.user == comment.user:
+        comment.delete()
+        messages.success(request, 'Your comment has been deleted!')
+
+    return redirect('news_detail', news_id)
 
 
 # Sources of guidance used to create this code
