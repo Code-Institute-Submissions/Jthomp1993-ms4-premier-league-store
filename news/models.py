@@ -1,5 +1,5 @@
 from django.db import models
-from profiles.models import UserProfile
+from profiles.models import User
 
 
 class News(models.Model):
@@ -18,14 +18,16 @@ class News(models.Model):
 
 
 class Comments(models.Model):
-    class Meta:
-        verbose_name_plural = 'Comments'
-    news = models.ForeignKey(News, on_delete=models.CASCADE)
+    news = models.ForeignKey('News', null=True, blank=True, on_delete=models.SET_NULL)
     user = models.ForeignKey(
-        UserProfile, on_delete=models.SET_NULL,
+        User, on_delete=models.SET_NULL,
         null=True, blank=True, default='Anonymous')
     comment = models.TextField()
     date_time = models.DateTimeField(auto_now_add=True,)
+
+    class Meta:
+        verbose_name_plural = 'Comments'
+        ordering = ['date_time']
 
     def __str__(self):
         return self.comment
