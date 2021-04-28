@@ -69,12 +69,18 @@ class StripeWH_Handler:
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
                 profile.default_phone_number__iexact = shipping_details.phone
-                profile.default_country__iexact = shipping_details.address.country
-                profile.default_postcode__iexact = shipping_details.address.postal_code
-                profile.default_town_or_city__iexact = shipping_details.address.city
-                profile.default_street_address1__iexact = shipping_details.address.line1
-                profile.default_street_address2__iexact = shipping_details.address.line2
-                profile.default_county__iexact = shipping_details.address.state
+                profile.default_country__iexact = (
+                    shipping_details.address.country)
+                profile.default_postcode__iexact = (
+                    shipping_details.address.postal_code)
+                profile.default_town_or_city__iexact = (
+                    shipping_details.address.city)
+                profile.default_street_address1__iexact = (
+                    shipping_details.address.line1)
+                profile.default_street_address2__iexact = (
+                    shipping_details.address.line2)
+                profile.default_county__iexact = (
+                    shipping_details.address.state)
                 profile.save()
 
         order_exists = False
