@@ -61,6 +61,37 @@ def add_news(request):
 
 
 @login_required
+def edit_news(request, news_id):
+    """ Edit a news article  """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry only store owners are allowed to do that!')
+        return redirect(reverse('home'))
+
+    n = get_object_or_404(News, pk=news_id)
+    if request.method == 'POST':
+        form = NewsForm(request.POST, request.FILES, instance=n)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'News article successfully updated!')
+            return redirect(reverse('news_detail', args=[n.id]))
+        else:
+            messages.error(request, 'Unable to update news article. \
+                Please ensure that the form is valid.')
+    else:
+        form = NewsForm(instance=n)
+        messages.info(request, f'You are editing {n.title}')
+
+    template = 'news/edit_news.html'
+    context = {
+        'form': form,
+        'n': n,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
 def add_comment(request, news_id):
     """ A view to add a comment to a news article """
     news = get_object_or_404(News, pk=news_id)
