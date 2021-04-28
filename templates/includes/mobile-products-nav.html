@@ -3,10 +3,10 @@
     All Products
     </a>
     <div class="dropdown-menu">
-        <a href="" class="dropdown-item">By Price</a>
-        <a href="" class="dropdown-item ">By Rating</a>
-        <a href="" class="dropdown-item ">By Category</a>
-        <a href="" class="dropdown-item">All Products</a>
+        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+        <a href="{% url 'products' %}?sort=category&direction=desc" class="dropdown-item ">By Category</a>
+        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
     </div>
 </li>
 <li class="nav-item dropdown pl-3 d-block d-lg-none">
@@ -14,10 +14,10 @@
     Kits
     </a>
     <div class="dropdown-menu">
-        <a href="" class="dropdown-item">Home Kits</a>
-        <a href="" class="dropdown-item ">Away Kits</a>
-        <a href="" class="dropdown-item ">Third kits</a>
-        <a href="" class="dropdown-item">Training</a>
+        <a href="{% url 'products' %}?category=home_kits" class="dropdown-item">Home Kits</a>
+        <a href="{% url 'products' %}?category=away_kits" class="dropdown-item ">Away Kits</a>
+        <a href="{% url 'products' %}?category=third_kits" class="dropdown-item ">Third kits</a>
+        <a href="{% url 'products' %}?category=training" class="dropdown-item">Training</a>
     </div>
 </li>
 <li class="nav-item dropdown pl-3 d-block d-lg-none">
@@ -25,16 +25,16 @@
     Teams
     </a>
     <div class="dropdown-menu">
-        <a href="" class="dropdown-item">Arsenal</a>
-        <a href="" class="dropdown-item">Chelsea</a>
-        <a href="" class="dropdown-item">Fulham</a>
-        <a href="" class="dropdown-item">Liverpool</a>
-        <a href="" class="dropdown-item">Manchester City</a>
-        <a href="" class="dropdown-item">Manchester United</a>
-        <a href="" class="dropdown-item">Newcastle United</a>
-        <a href="" class="dropdown-item">Southampton</a>
-        <a href="" class="dropdown-item">Tottenham</a>
-        <a href="" class="dropdown-item">West Ham United</a>
+        <a href="{% url 'products' %}?team=arsenal" class="dropdown-item">Arsenal</a>
+        <a href="{% url 'products' %}?team=chelsea" class="dropdown-item">Chelsea</a>
+        <a href="{% url 'products' %}?team=fulham" class="dropdown-item">Fulham</a>
+        <a href="{% url 'products' %}?team=liverpool" class="dropdown-item">Liverpool</a>
+        <a href="{% url 'products' %}?team=manchester_city" class="dropdown-item">Manchester City</a>
+        <a href="{% url 'products' %}?team=manchester_united" class="dropdown-item">Manchester United</a>
+        <a href="{% url 'products' %}?team=newcastle_united" class="dropdown-item">Newcastle United</a>
+        <a href="{% url 'products' %}?team=southampton" class="dropdown-item">Southampton</a>
+        <a href="{% url 'products' %}?team=tottenham" class="dropdown-item">Tottenham</a>
+        <a href="{% url 'products' %}?team=west_ham_united" class="dropdown-item">West Ham United</a>
     </div>
 </li>
 <li class="nav-item pl-3 d-block d-lg-none">
