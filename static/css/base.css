@@ -201,6 +201,17 @@ footer p {
     font-size: 14px;
 }
 
+.page-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .footer {
+    margin-top: auto;
+}
+
 
 /* ---------------------------------------------------- Home page content */
 
@@ -324,6 +335,10 @@ footer p {
 
 .allauth-form-inner-content a {
 	color: #37003c;
+}
+
+.margin-wrapper {
+    margin-top: 150px;
 }
 
 
