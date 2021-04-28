@@ -169,6 +169,20 @@ def delete_comment(request, news_id, comment_id):
     return redirect('news_detail', news_id)
 
 
+@login_required
+def delete_news(request, news_id):
+    """ Delete a news article from the store """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry only store owners are allowed to do that!')
+        return redirect(reverse('home'))
+
+    n = get_object_or_404(News, pk=news_id)
+    n.delete()
+    messages.success(request, 'News article succesfully deleted!')
+    return redirect(reverse('news'))
+
+
 # Sources of guidance used to create this code
 
 # https://djangocentral.com/creating-comments-system-with-django/
