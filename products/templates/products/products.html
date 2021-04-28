@@ -1,97 +1,95 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
-    <div class="container-fluid page-header text-font">
-        <div class="row">
-            <div class="col-12 col-md-7 col-lg-9">
-                <h1 class="mt-3 mb-3 text-white">Store</h1>
-            </div>
-            <div class="col-12 col-md-5 col-lg-3 text-font">
-                <!-- Code for the search bar form taken from the Code Institute Boutique Ado Project -->
-                <form class="form mt-3 mb-3" method="GET" action="{% url 'products' %}">
-                    <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                        <div class="input-group-append">
-                            <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
-                                <span class="icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+<div class="container-fluid page-header text-font">
+    <div class="row">
+        <div class="col-12 col-md-7 col-lg-9">
+            <h1 class="mt-3 mb-3 text-white">Store</h1>
         </div>
-        <div class="row">
-            <div class="col-12 text-font text-color h-20 d-none d-lg-block">
-                <ul class="nav justify-content-center mb-2">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="{% url 'products' %}">
-                        All Products
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
-                                By Price
-                            </a>
-                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">
-                                By Rating
-                            </a>
-                            <a href="{% url 'products' %}?sort=category&direction=desc" class="dropdown-item ">
-                                By Category
-                            </a>
-                            <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown pl-2">
-                        <a class="nav-link active dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                        Kits
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="{% url 'products' %}?category=home_kits" class="dropdown-item">Home Kits</a>
-                            <a href="{% url 'products' %}?category=away_kits" class="dropdown-item ">Away Kits</a>
-                            <a href="{% url 'products' %}?category=third_kits" class="dropdown-item ">
-                                Third kits
-                            </a>
-                            <a href="{% url 'products' %}?category=training" class="dropdown-item">Training</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown pl-2">
-                        <a class="nav-link active dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
-                        Teams
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="{% url 'products' %}?team=arsenal" class="dropdown-item">Arsenal</a>
-                            <a href="{% url 'products' %}?team=chelsea" class="dropdown-item">Chelsea</a>
-                            <a href="{% url 'products' %}?team=fulham" class="dropdown-item">Fulham</a>
-                            <a href="{% url 'products' %}?team=liverpool" class="dropdown-item">Liverpool</a>
-                            <a href="{% url 'products' %}?team=manchester_city" class="dropdown-item">
-                                Manchester City
-                            </a>
-                            <a href="{% url 'products' %}?team=manchester_united" class="dropdown-item">
-                                Manchester United
-                            </a>
-                            <a href="{% url 'products' %}?team=newcastle_united" class="dropdown-item">
-                                Newcastle United
-                            </a>
-                            <a href="{% url 'products' %}?team=southampton" class="dropdown-item">Southampton</a>
-                            <a href="{% url 'products' %}?team=tottenham" class="dropdown-item">Tottenham</a>
-                            <a href="{% url 'products' %}?team=west_ham_united" class="dropdown-item">
-                                West Ham United
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item pl-2">
-                        <a class="nav-link btn-nav" href="{% url 'products' %}?category=merchandise">
-                            Merchandise
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-12 col-md-5 col-lg-3 text-font">
+            <!-- Code for the search bar form taken from the Code Institute Boutique Ado Project -->
+            <form class="form mt-3 mb-3" method="GET" action="{% url 'products' %}">
+                <div class="input-group w-100">
+                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                    <div class="input-group-append">
+                        <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
+                        <span class="icon">
+                        <i class="fas fa-search"></i>
+                        </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 text-font text-color h-20 d-none d-lg-block">
+            <ul class="nav justify-content-center mb-2">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="{% url 'products' %}">
+                    All Products
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
+                        By Price
+                        </a>
+                        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">
+                        By Rating
+                        </a>
+                        <a href="{% url 'products' %}?sort=category&direction=desc" class="dropdown-item ">
+                        By Category
+                        </a>
+                        <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pl-2">
+                    <a class="nav-link active dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                    Kits
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'products' %}?category=home_kits" class="dropdown-item">Home Kits</a>
+                        <a href="{% url 'products' %}?category=away_kits" class="dropdown-item ">Away Kits</a>
+                        <a href="{% url 'products' %}?category=third_kits" class="dropdown-item ">
+                        Third kits
+                        </a>
+                        <a href="{% url 'products' %}?category=training" class="dropdown-item">Training</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown pl-2">
+                    <a class="nav-link active dropdown-toggle btn-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+                    Teams
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'products' %}?team=arsenal" class="dropdown-item">Arsenal</a>
+                        <a href="{% url 'products' %}?team=chelsea" class="dropdown-item">Chelsea</a>
+                        <a href="{% url 'products' %}?team=fulham" class="dropdown-item">Fulham</a>
+                        <a href="{% url 'products' %}?team=liverpool" class="dropdown-item">Liverpool</a>
+                        <a href="{% url 'products' %}?team=manchester_city" class="dropdown-item">
+                        Manchester City
+                        </a>
+                        <a href="{% url 'products' %}?team=manchester_united" class="dropdown-item">
+                        Manchester United
+                        </a>
+                        <a href="{% url 'products' %}?team=newcastle_united" class="dropdown-item">
+                        Newcastle United
+                        </a>
+                        <a href="{% url 'products' %}?team=southampton" class="dropdown-item">Southampton</a>
+                        <a href="{% url 'products' %}?team=tottenham" class="dropdown-item">Tottenham</a>
+                        <a href="{% url 'products' %}?team=west_ham_united" class="dropdown-item">
+                        West Ham United
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link btn-nav" href="{% url 'products' %}?category=merchandise">
+                    Merchandise
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 {% endblock %}
-
 {% block content %}
 {% for c in current_categories %}
 <div class="container category-header text-font mt-5">
@@ -111,35 +109,33 @@
     </div>
 </div>
 {% endfor %}
-
 <div class="container text-font mt-3">
     <div class="row">
         <div class="col-12 col-md-8 col-lg-9">
             <!-- Code taken from the Code Institute Boutique Ado Project -->
             <p class="text-muted mt-3 text-center text-md-left">
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span class="small"><a class="text-color" href="{% url 'products' %}">Products Home</a> | </span>
+                <span class="small"><a class="text-color" href="{% url 'products' %}">Products Home</a> | </span>
                 {% endif %}
                 {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
             </p>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-                <!-- Code taken from the Code Institute Boutique Ado Project -->
-                <select id="sort-selector" class="custom-select custom-select-sm mt-2 rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                    <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                    <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
-                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                    <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                    <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                    <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
-                </select>
-            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+            <!-- Code taken from the Code Institute Boutique Ado Project -->
+            <select id="sort-selector" class="custom-select custom-select-sm mt-2 rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+            </select>
         </div>
     </div>
-
+</div>
 <div class="container mb-5">
     <div class="row">
         {% for product in products %}
@@ -147,11 +143,11 @@
             <div class="card product-card h-100 border-1">
                 {% if product.image %}
                 <a class="pt-2 mx-2" href="{% url 'product_info' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_info' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
                 <div class="card-body pb-0">
@@ -163,29 +159,29 @@
                         <div class="col">
                             <p class=" mb-0 text-left">£{{ product.price }}</p>
                             {% if product.rating %}
-                                <small class="text-muted">
-                                    <i class="fas fa-star mr-1"></i> {{ product.rating }} / 5
-                                </small>
+                            <small class="text-muted">
+                            <i class="fas fa-star mr-1"></i> {{ product.rating }} / 5
+                            </small>
                             {% else %}
-                                <small class="text-muted">No Rating</small>
+                            <small class="text-muted">No Rating</small>
                             {% endif %}
                             {% if product.category %}
-                                <a href="{% url 'products' %}?category={{ product.category.name }}">
-                                    <p class="text-muted">
-                                        <small><i class="fas fa-tags"></i> {{ product.category.friendly_name }}
-                                        </small>
-                                    </p>
-                                </a>
+                            <a href="{% url 'products' %}?category={{ product.category.name }}">
+                                <p class="text-muted">
+                                    <small><i class="fas fa-tags"></i> {{ product.category.friendly_name }}
+                                    </small>
+                                </p>
+                            </a>
                             {% endif %}
                             {% if request.user.is_superuser %}
-                                <small>
-                                    <a class="text-font text-color" href="{% url 'edit_product' product.id %}">
-                                        Edit
-                                    </a>
-                                    <a class="text-font text-danger" href="{% url 'delete_product' product.id %}">
-                                        Delete
-                                    </a>
-                                </small>
+                            <small>
+                            <a class="text-font text-color" href="{% url 'edit_product' product.id %}">
+                            Edit
+                            </a>
+                            <a class="text-font text-danger" href="{% url 'delete_product' product.id %}">
+                            Delete
+                            </a>
+                            </small>
                             {% endif %}
                         </div>
                     </div>
@@ -197,41 +193,39 @@
 </div>
 <div class="to-top-btn btn-purple shadow-sm rounded-0">
     <a class="to-top-link d-flex h-100">
-        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
     </a>	
 </div>
 {% endblock %}
-
 <!-- Code taken from the Code Institute - Boutique Ado Project. -->
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-		$('.to-top-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-        
-	</script>
+{{ block.super }}
+<script type="text/javascript">
+    $('.to-top-link').click(function(e) {
+    	window.scrollTo(0,0)
+    })
+          
+</script>
+<script type="text/javascript">
+    $('#sort-selector').change(function() {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
     
-    <script type="text/javascript">
-        $('#sort-selector').change(function() {
-            var selector = $(this);
-            var currentUrl = new URL(window.location);
-
-            var selectedVal = selector.val();
-            if(selectedVal != "reset"){
-                var sort = selectedVal.split("_")[0];
-                var direction = selectedVal.split("_")[1];
-
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
-
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
-
-                window.location.replace(currentUrl);
-            }
-        })
-    </script>
+        var selectedVal = selector.val();
+        if(selectedVal != "reset"){
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
+    
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+    
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+    
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
 {% endblock %}

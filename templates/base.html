@@ -1,50 +1,43 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
-  <head>
-    {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% endblock %}
-
-    {% block extra_meta %}
-    {% endblock %}
-
-    {% block corecss %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
-
-    {% block extra_css %}
-    {% endblock %}
-
-    {% block corejs %}
-    <script src="https://kit.fontawesome.com/28d8d22efd.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    {% endblock %}
-
-    {% block extra_js %}
-    {% endblock %}
-
-    <title>Premier League Store {% block extra_title %}{% endblock %}</title>
+    <head>
+        {% block meta %}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% endblock %}
+        {% block extra_meta %}
+        {% endblock %}
+        {% block corecss %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% endblock %}
+        {% block extra_css %}
+        {% endblock %}
+        {% block corejs %}
+        <script src="https://kit.fontawesome.com/28d8d22efd.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        {% endblock %}
+        {% block extra_js %}
+        {% endblock %}
+        <title>Premier League Store {% block extra_title %}{% endblock %}</title>
     </head>
     <body class="base-body">
         <div class="page-container">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-font">
-                <a class="navbar-brand d-none d-lg-block" href="{% url 'home' %}">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-font">
+                    <a class="navbar-brand d-none d-lg-block" href="{% url 'home' %}">
                     <img src="{{ MEDIA_URL }}pl-logo-white.png" alt="Premier League Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- My Account and shopping bag buttons to be displayed on small and medium screen sizes -->
-                <ul class="list-inline list-unstyled align-item-right text-lg-right my-0 d-block d-lg-none">
+                    </button>
+                    <!-- My Account and shopping bag buttons to be displayed on small and medium screen sizes -->
+                    <ul class="list-inline list-unstyled align-item-right text-lg-right my-0 d-block d-lg-none">
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link mt-3" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
@@ -54,14 +47,14 @@
                             </a>
                             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                {% if request.user.is_superuser %}
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                                 {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                                 {% endif %}
                             </div>
                         </li>
@@ -80,137 +73,131 @@
                             </a>
                         </li>
                     </ul>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active pl-3">
-                            <a class="nav-link" href="{% url 'home' %}">Home</a>
-                        </li>
-                        <li class="nav-item pl-3">
-                            <a class="nav-link" href="{% url 'products' %}">Store</a>
-                        </li>
-                        <li class="nav-item pl-3">
-                            <a class="nav-link" href="{% url 'news' %}">News</a>
-                        </li>
-                        {% include 'includes/mobile-products-nav.html' %}
-                    </ul>
-                </div>
-                <!-- My account and shopping bag buttons to be displayed on large screen sizes -->
-                <ul class="list-inline list-unstyled align-item-right text-lg-right my-0 d-none d-lg-block">
-                        <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link mt-3" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg"></i></div>
-                                    <p class="my-0">My Account</p>
-                                </div>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                    <a href="{% url 'add_news' %}" class="dropdown-item">Add News</a>
-                                {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="nav-link mt-2" href="{% url 'view_cart' %}">
-                                <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                    <p class="my-0">
-                                        {% if grand_total %}
-                                        £{{ grand_total|floatformat:2 }}
-                                        {% else %}
-                                        £ 0.00
-                                        {% endif %}
-                                    </p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-            </nav>
-        </header>
-        
-        {% if messages %}
-        <div class="messages-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
-    {% endif %}
-
-        {% block page_header %}
-        {% endblock %}
-
-        {% block content %}
-        {% endblock %}
-
-        <footer class="page-footer footer">
-            <div class="container-fluid no-gutters">
-                <div class="row">
-                    <div class="col-12 footer-logo pt-3 d-flex justify-content-center">
-                        <a href="https://www.premierleague.com/" target="blank">
-                            <img class="" src="{{ MEDIA_URL }}premier-league-logo-header-full.png" 
-                            alt="Premier League Logo">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 social-media-links d-flex justify-content-center">
-                        <ul class="px-0">
-                            <li>
-                                <a href="https://www.facebook.com/premierleague/" target="blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active pl-3">
+                                <a class="nav-link" href="{% url 'home' %}">Home</a>
                             </li>
-                            <li>
-                                <a href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
+                            <li class="nav-item pl-3">
+                                <a class="nav-link" href="{% url 'products' %}">Store</a>
                             </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w" target="blank">
-                                    <i class="fab fa-youtube-square"></i>
-                                </a>
+                            <li class="nav-item pl-3">
+                                <a class="nav-link" href="{% url 'news' %}">News</a>
                             </li>
-                            <li>
-                                <a href="https://www.instagram.com/premierleague/?hl=en" target="blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </li>
+                            {% include 'includes/mobile-products-nav.html' %}
                         </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 created-by text-white text-font d-flex justify-content-center mt-3">
-                        <p>Created by <a href="https://github.com/Jthomp1993">Joshua Thompson 
-                            <i class="fab fa-github"></i></a>
-                        </p>
+                    <!-- My account and shopping bag buttons to be displayed on large screen sizes -->
+                    <ul class="list-inline list-unstyled align-item-right text-lg-right my-0 d-none d-lg-block">
+                        <li class="list-inline-item dropdown">
+                            <a class="text-black nav-link mt-3" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center">
+                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                    <p class="my-0">My Account</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                <a href="{% url 'add_news' %}" class="dropdown-item">Add News</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                {% endif %}
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="nav-link mt-2" href="{% url 'view_cart' %}">
+                                <div class="text-center">
+                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                    <p class="my-0">
+                                        {% if grand_total %}
+                                        £{{ grand_total|floatformat:2 }}
+                                        {% else %}
+                                        £ 0.00
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            {% if messages %}
+            <div class="messages-container">
+                {% for message in messages %}
+                {% with message.level as level %}
+                {% if level == 40 %}
+                {% include 'includes/toasts/toast_error.html' %}
+                {% elif level == 30 %}
+                {% include 'includes/toasts/toast_warning.html' %}
+                {% elif level == 25 %}
+                {% include 'includes/toasts/toast_success.html' %}
+                {% else %}
+                {% include 'includes/toasts/toast_info.html' %}
+                {% endif %}
+                {% endwith %}
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% block page_header %}
+            {% endblock %}
+            {% block content %}
+            {% endblock %}
+            <footer class="page-footer footer">
+                <div class="container-fluid no-gutters">
+                    <div class="row">
+                        <div class="col-12 footer-logo pt-3 d-flex justify-content-center">
+                            <a href="https://www.premierleague.com/" target="blank">
+                            <img class="" src="{{ MEDIA_URL }}premier-league-logo-header-full.png" 
+                                alt="Premier League Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 social-media-links d-flex justify-content-center">
+                            <ul class="px-0">
+                                <li>
+                                    <a href="https://www.facebook.com/premierleague/" target="blank">
+                                    <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                                    <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w" target="blank">
+                                    <i class="fab fa-youtube-square"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/premierleague/?hl=en" target="blank">
+                                    <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 created-by text-white text-font d-flex justify-content-center mt-3">
+                            <p>Created by <a href="https://github.com/Jthomp1993">Joshua Thompson 
+                                <i class="fab fa-github"></i></a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-
-        {% block postloadjs %}
-        <script type="text/javascript">
-            $('.toast').toast('show');
-        </script>
-        {% endblock %}
-
-    </div>
-</body>
+            </footer>
+            {% block postloadjs %}
+            <script type="text/javascript">
+                $('.toast').toast('show');
+            </script>
+            {% endblock %}
+        </div>
+    </body>
 </html>

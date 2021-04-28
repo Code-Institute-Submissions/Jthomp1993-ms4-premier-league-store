@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 <div class="container-fluid product-info-wrapper">
     <div class="row">
@@ -8,11 +7,11 @@
             <div class="product-image my-5">
                 {% if product.image %}
                 <a class="pt-2 mx-2" href="{{ product.image.url }}" target="blank">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{{ product.image.url }}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
             </div>
@@ -23,11 +22,11 @@
                 <h5 class="pt-2">{{ product.name }}</h5>
                 <h5 class="pt-2">£{{ product.price }}</h5>
                 {% if product.rating %}
-                    <p class="text-muted mt-3">
-                        <i class="fas fa-star mr-1"></i>{{ product.rating }} / 5
-                    </p>
+                <p class="text-muted mt-3">
+                    <i class="fas fa-star mr-1"></i>{{ product.rating }} / 5
+                </p>
                 {% else %}
-                    <p class="text-muted">No Rating</p>
+                <p class="text-muted">No Rating</p>
                 {% endif %}
                 {% if product.category %}
                 <a href="{% url 'products' %}?category={{ product.category.name }}">
@@ -61,20 +60,20 @@
                         </div>
                         <div class="col-12 pt-3">
                             {% if request.user.is_superuser %}
-                                    <a class="text-font text-color" href="{% url 'edit_product' product.id %}">
-                                        Edit
-                                    </a>
-                                    <a class="text-font text-danger pl-2" href="{% url 'delete_product' product.id %}">
-                                        Delete
-                                    </a>
+                            <a class="text-font text-color" href="{% url 'edit_product' product.id %}">
+                            Edit
+                            </a>
+                            <a class="text-font text-danger pl-2" href="{% url 'delete_product' product.id %}">
+                            Delete
+                            </a>
                             {% endif %}
                         </div>
                         <div class="col-12 pt-3">
                             <a class="btn btn-purple-outline" href="{% url 'products' %}">
-                                <span class="text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
+                            <span class="text-bold"><i class="fas fa-chevron-left"></i> Keep Shopping</span>
                             </a>
                             <button type="submit" class="btn-green btn border-0 text-bold rounded-1 ml-2">
-                                <span>Add To Cart</span>
+                            <span>Add To Cart</span>
                             </button>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -85,9 +84,7 @@
         </div>
     </div>
 </div>
-
 {% endblock %}
-
 {% block postloadjs %}
 {{ block.super }}
 {% endblock %}
