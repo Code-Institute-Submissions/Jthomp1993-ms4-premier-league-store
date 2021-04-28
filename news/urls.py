@@ -9,4 +9,5 @@ urlpatterns = [
          views.delete_comment, name='delete_comment'),
     path('editcomment/<int:news_id>/<int:comment_id>/',
          views.edit_comment, name='edit_comment'),
+    path('addnews/', views.add_news, name='add_news'),
 ]

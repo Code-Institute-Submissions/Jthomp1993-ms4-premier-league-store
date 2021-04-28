@@ -2,7 +2,7 @@ from django.shortcuts import (
     render, redirect, get_object_or_404, reverse,)
 from django.contrib import messages
 from .models import News, Comments
-from .forms import CommentForm
+from .forms import CommentForm, NewsForm
 
 from django.contrib.auth.decorators import login_required
 
@@ -31,6 +31,33 @@ def news_detail(request, news_id):
     }
 
     return render(request, 'news/news_detail.html', context)
+
+
+@login_required
+def add_news(request):
+    """ Add a news article to the site """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry only store owners are allowed to do that!')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = NewsForm(request.POST, request.FILES)
+        if form.is_valid():
+            news = form.save()
+            messages.success(request, 'Successfully added news article!')
+            return redirect(reverse('news_detail', args=[news.id]))
+        else:
+            messages.error(request, 'Failed to add news article. \
+                 Please ensure the form is valid.')
+    else:
+        form = NewsForm()
+    template = 'news/add_news.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
 
 
 @login_required
