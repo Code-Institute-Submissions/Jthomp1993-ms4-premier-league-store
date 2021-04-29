@@ -419,21 +419,37 @@ To do this I first set up a new bucket which is where your files are stored.
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'```
 
 * The next step is to create a custom_storage.py file and add the following to it:
-    - ```from django.conf import settings
-    from storages.backends.s3boto3 import S3Boto3Storage```
+    - from django.conf import settings
+    from storages.backends.s3boto3 import S3Boto3Storage
 
 
-    - ```class StaticStorage(S3Boto3Storage):
-        location = settings.STATICFILES_LOCATION```
+    class StaticStorage(S3Boto3Storage):
+        location = settings.STATICFILES_LOCATION
 
 
-    - ```class MediaStorage(S3Boto3Storage):
-        location = settings.MEDIAFILES_LOCATION```
+    class MediaStorage(S3Boto3Storage):
+        location = settings.MEDIAFILES_LOCATION
 
 * Then I removed the DISABLE_COLLECTSTATIC variable from the config vars in Heroku.
 * Then commit and changes and push to GiHub which will also push all the new changes up to the deployed Heroku app.
 
 If you would like to learn more about Amazon Web Services S3 you can [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html)
+
+## Credits
+
+* All product images were taken from [Sports Direct](https://www.google.com/search?q=sports+direct&oq=sports+direct&aqs=chrome.0.69i59j46i175i199j0j0i433l2j69i60l3.2062j0j4&sourceid=chrome&ie=UTF-8).
+* All other images were taken from [Premier League](https://www.premierleague.com/).
+* Throughout the development of my project I used the [Boutique Ado project](https://github.com/Code-Institute-Solutions/boutique_ado_v1) as a guideline for creating some of the models.
+
+## Disclaimer 
+
+This project is for educational purposes only as part of my final prkect for Code Institute. Please get in touch with me regarding any copyright issues. 
+
+## Acknowledgements
+
+Thank you to my mentor Seun Owonikoko for her continued support throughout the development of my project. 
+
+Thank you to all of the tutors over at Code Institute for the help and advice that they have given me throughout the development of my project. 
 
 
 
