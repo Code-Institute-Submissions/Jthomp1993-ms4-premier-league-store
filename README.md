@@ -420,15 +420,15 @@ To do this I first set up a new bucket which is where your files are stored.
 
 * The next step is to create a custom_storage.py file and add the following to it:
     - ```from django.conf import settings
-from storages.backends.s3boto3 import S3Boto3Storage
+    from storages.backends.s3boto3 import S3Boto3Storage
 
 
-class StaticStorage(S3Boto3Storage):
-    location = settings.STATICFILES_LOCATION
+    class StaticStorage(S3Boto3Storage):
+        location = settings.STATICFILES_LOCATION
 
 
-class MediaStorage(S3Boto3Storage):
-    location = settings.MEDIAFILES_LOCATION```
+    class MediaStorage(S3Boto3Storage):
+        location = settings.MEDIAFILES_LOCATION```
 
 * Then I removed the DISABLE_COLLECTSTATIC variable from the config vars in Heroku.
 * Then commit and changes and push to GiHub which will also push all the new changes up to the deployed Heroku app.
