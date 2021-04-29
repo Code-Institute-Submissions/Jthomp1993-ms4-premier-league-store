@@ -393,7 +393,7 @@ To do this I first set up a new bucket which is where your files are stored.
     - ```pip3 freeze > requirments.txt```
 
 * Next I added all of the following variables to my settings.py file:
- - if 'USE_AWS' in os.environ:
+ - ```if 'USE_AWS' in os.environ:
 
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
@@ -416,10 +416,10 @@ To do this I first set up a new bucket which is where your files are stored.
 
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'```
 
 * The next step is to create a custom_storage.py file and add the following to it:
-    - from django.conf import settings
+    - ```from django.conf import settings
 from storages.backends.s3boto3 import S3Boto3Storage
 
 
@@ -428,7 +428,7 @@ class StaticStorage(S3Boto3Storage):
 
 
 class MediaStorage(S3Boto3Storage):
-    location = settings.MEDIAFILES_LOCATION
+    location = settings.MEDIAFILES_LOCATION```
 
 * Then I removed the DISABLE_COLLECTSTATIC variable from the config vars in Heroku.
 * Then commit and changes and push to GiHub which will also push all the new changes up to the deployed Heroku app.
