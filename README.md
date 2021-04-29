@@ -6,7 +6,7 @@
 ![Am I Responsive Image](static/readme_images/am_i_responsive.png)
 
 For my final milestone project for the Code Institute Diploma in Software Development I created the Premier League Store. This is an app that allows fans of the Premier League to buy foootball kits and merchandise from the teams that play in the league, as well as keeping up to date with the latest news from the Premiership. 
-Users are able to to filter the products by team so they can easily find the products of their favourite team and they can also leave comments on the news articles so that they can express they feeling on whats happening. 
+Users are able to filter the products by team so they can easily find the products of their favourite team and they can also leave comments on the news articles so that they can express they feeling on whats happening. 
 The store owner has the ability to create, read, update and delete products and news articles enabling them to keep the store maintained and up to date. The website is fully responsive accross all devices ensuring there are no users unable to enjoy it.
 
 ## Table Of Contents
