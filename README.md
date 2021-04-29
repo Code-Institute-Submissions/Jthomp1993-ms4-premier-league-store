@@ -43,17 +43,14 @@ The store owner has the ability to create, read, update and delete products and 
     - [Acknowledgements](#Acknowledgements)
 
 ## User Experience
-***
 
 ## Main aims of the project
-***
 
 The main aim of the Premier League Store is to provide a platform to football fans where they are able to purchase the kits and official merchandise of their favourite Premier League teams. The app is also aimed at providing it's users with up to date news regarding the Premier League whilst also giving it's registered users the chance to comment on these news articles to enable them to voice there opionion on what is happening. 
 
 It was essential that the site was easy to use and was secure for it's users whilst they were making purchases. These matters were taken into great consideration throughout the development process to enusre that users have a good user experience.
 
 ## The Strategy Plane
-***
 
 To begin the UX process I started by creating a list of user stories that would enable me to carefully consider the design of my project to ensure that all of these potential users needs would be met.
 
@@ -108,7 +105,6 @@ To begin the UX process I started by creating a list of user stories that would 
 * As the store owner I want to be able to delete products so that I can remove products that are no longer available. 
 
 ## The Scope Plane
-***
 
 By creating the user stories for my project, this enabled me to carefully consider the features that the site would need to have to meet the main aims of the project as well as the users needs.
 
@@ -135,7 +131,6 @@ The shopping cart page will provide an overview of the products that the user ha
 The checkout page will feature a stripe payment system which will enable users to purchase products securely. After making a purchase users will be provided with confirmation of their order. 
 
 ## The Structure Plane
-***
 
 As I am using Django to create the site, I will structure each feature into it's own respective app. The site will contain fixed nav bar that will enable users to be able to easily navigate between the different apps.  
 
@@ -198,8 +193,9 @@ I then loaded them into the database using the following command:
 
 Below you can see the data model which I created using [DrawSQL](https://drawsql.app/jthompo93/diagrams/premierleague)
 
+![Am I Responsive Image](static/readme_images/data_model.png)
+
 ## Technologies Used
-***
 
 ### Languages 
 
@@ -239,23 +235,7 @@ Due to a lot of the same technologies being used some of the above text was copi
 
 [Back to Top](#table-of-contents)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Features
-***
 
 ### Existing Features
 ***
@@ -310,6 +290,70 @@ The shopping cart provides the users with an overview of the products they have 
 ### Checkout App
 
 The checkout app allows users to enter their delivery and payment information through the stripe payment system that has been implemeneted. On the checkout page the user is also provided with an overview of the order that they are about to purchase.
+
+## Deployment
+
+### Deploying To Heroku
+
+The first step in deploying my project was creating a new app in heroku and setting it up for automatic deployments.
+
+The following steps were taken in order to achieve this:
+
+* The first step was to install the following packages using PIP.
+    - gunicorn
+    - psycopg2-binary
+    - dj-database-url
+* Then I added the new packages to the requirements.txt file by using the following command:
+    - ```pip3 freeze > requirements.txt```
+* Next I created a Procfile and added the following to it:
+    - web: gunicorn premier_league_store.wsgi:application
+* I then commited and pushed these changes to GitHub using the following commands:
+    - ```git add .```
+    - ```git commit```
+    - ```git push```
+
+* The next step was to sign into Heroku and create a new app. When creating the new app I selected the closest region to me. 
+* I then headed to the resources tab and chose add ons from where I selected the Heroku PostgreSQL database.
+* The next step was to go to the settings tab and click on reveal config vars to set the following variables.
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - DATABASE_URL
+    - EMAIL_HOST_PASS
+    - EMAIL_HOST_USER
+    - SECRET_KEY
+    - STRIPE_PUBLIC_KEY
+    - STRIPE_SECRET_KEY
+    - STRIPE_WH_SECRET
+    - USE_AWS
+* I then went to the settings tab to link Heroku to my GitHub repository. Once I had found my GitHub repo I could then click on "Enable automatic deployments".
+
+* I then commented out the existing database in the settings.py file of my project and then added the new Postgres database which can be seen below:
+    - DATABASES = {     
+        'default': dj_database_url.parse("DATABASE_URL")     
+    }
+* The next step was to makemigrations in order to migrate the database models over to the new Postgres databse. This was done using the following commands.
+    - ```python3 manage.py makemigrations```
+    - ```python3 manage.py migrate```
+* Next I loaded the fixtures into the database using the following command ```python3 manage.py loaddata (fixture file name goes here)```. I added them in the following order as the products data model relies on fields from the other models.
+    - categories
+    - brands
+    - teams
+    - products
+    - news
+* Next I created a new superuser for the Heroku postgres database using ```python3 manage.py createsuperuser```.
+* I then created an if statement to determine which database should be used:
+ - ![Am I Responsive Image](static/readme_images/database.png)
+
+* I then ran the following command in the terminal to ensure that Heroku would not collect the static files from my project.
+    - ```heroku config:set DISABLE_COLLECTSTATIC=1```
+
+* I then added the allowed hosts to my settings.py file as follows:
+    - ```ALLOWED_HOSTS = ['premier-league-store-ms4.herokuapp.com', 'localhost']```
+Next I headed over to my Stripe account and added a new end point and ran some test web hooks to esnure Stripe was working properly with the deployed version of my project. 
+
+* I then added my Stripe environment variables and email settings to my settings.py file.
+* The last thing to do was commit these changes and push to GitHub and as I had set up automatic deployments it also pushed to Heroku. 
+
 
 
 
