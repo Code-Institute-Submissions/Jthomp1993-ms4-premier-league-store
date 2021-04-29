@@ -12,11 +12,14 @@ The store owner has the ability to create, read, update and delete products and 
 ## Table Of Contents
 
 - [User Experience](#User-Experience)
+    - [Main Aims Of The Project](Main-aims-of-the-project)
+    - [The Strategy Plane](#The-Strategy-Plane)
     - [User Stories](#User-Stories)
-    - [Project Stakeholders](#Project-Stakeholders)
-    - [New users](#New-users)
-    - [Returning Users](#Returning-Users)
-    - [Mobile user](#Mobile-user)
+    - [Viewing and Navigation](#Viewing-and-Navigation)
+    - [Registration and User Accounts](#Registration-and-User-Accounts)
+    - [Sorting and Searching](#Sorting-and-Searching)
+    - [Purchasing and Checkout](#Purchasing-and-Checkout)
+    - [Admin](#Admin)
 - [Design Process](#Design-Process)
     - [UX Research](#UX-Research)
 - [UX Design](#UX-Design)
