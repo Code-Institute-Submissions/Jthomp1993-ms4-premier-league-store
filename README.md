@@ -112,18 +112,75 @@ To begin the UX process I started by creating a list of user stories that would 
 
 By creating the user stories for my project, this enabled me to carefully consider the features that the site would need to have to meet the main aims of the project as well as the users needs.
 
+### Products
+
+The products page will display all of the available products to the users. From that page they will have the ability to filter the products by price, rating, category and team. Users will be able to click on each product to view the product info page where they will be given a more in depth description and be able to add the product to their cart.
+
+### Accounts
+
+Users will be able to register to create their own accounts. By doing so they will have their own personal profile from where they will be able to save their default delivery information and keep track of their order history. 
+
+Store owners will have access to parts of the site that regular users will not. This will include pages to add new products and news articles and the store owners will also have the ability to edit and remove products and news articles.
+
+### News 
+
+The news page will feature articles of the latest news regarding the Premier League. Users will be able to add their own comments under each news article, as well as edit and delete them. 
+
+### Shopping Cart 
+
+The shopping cart page will provide an overview of the products that the user has added to their cart and will give them option of updating the quantity or removing products.
+
+### Checkout 
+
+The checkout page will feature a stripe payment system which will enable users to purchase products securely. After making a purchase users will be provided with confirmation of their order. 
+
+## The Structure Plane
+***
+
+As I am using Django to create the site, I will structure each feature into it's own respective app. The site will contain fixed nav bar that will enable users to be able to easily navigate between the different apps.  
+
+The apps that will collectively make up the site are as follows:
+* Home
+* Products (Store)
+* News
+* Profiles
+* Cart 
+* Checkout
+
+## The Skeleton Plane
+
+With the main features and strucutre now in place for the site, it was now time to begin designing the wireframes to really bring my ideas to life. To create the wire frames I used a programme called Figma. 
+
+The wireframes can be seen below. 
+
+![Am I Responsive Image](static/readme_images/wireframe_1.png)
+![Am I Responsive Image](static/readme_images/wireframe_2.png)
+![Am I Responsive Image](static/readme_images/wireframe_3.png)
+
+[You can view the Figma wireframes project here](https://www.figma.com/file/opdSBty1arp4J1AOlMTdIk/Milestone-Project-4?node-id=0%3A1)
+
+[Back to Top](#table-of-contents)
+
+## The Surface Plane
+
+## Features
+***
+
+### Existing Features
+***
+
 ### The Products App
 
-The products app is where users will be able to view all of the products which the store has in stock.
+The products app is where users are be able to view all of the products which the store has in stock.
 
-Users will be able to filter the products by the following categories:
+Users are able to filter the products by the following categories:
 * Home kits
 * Away Kits 
 * Third Kits
 * Training
 * Merchandise
 
-Users will be able to filter the products by the following teams:
+Users are able to filter the products by the following teams:
 * Arsenal
 * Chelsea
 * Fulham 
@@ -135,25 +192,33 @@ Users will be able to filter the products by the following teams:
 * Tottenham
 * West Ham United
 
-Users will be able to filter the products by:
+Users are able to filter the products by:
 * All products
 * By category
 * By rating (low to high / high to low)
 * By price (low to high / high to low)
 
-Users will be able to view a product info page which will give them a more in depth description of the product as well as enabling them to choose what size if applicable and the quantity before adding the product to their shopping cart.
+Users are able to view a product info page which gives them a more in depth description of the product as well as enabling them to choose what size if applicable and the quantity before adding the product to their shopping cart.
 
 ### The News App
 
-The news app is where users will be able to keep up to date with what is going on in the world of the Premier League.
+The news app is where users are able to keep up to date with what is going on in the world of the Premier League.
 
-Registered users will be able to add comments to the articles enabling them to express there opinions on the current events that are taking place. Users will have the ability the edit or remove their comments if they wish.
+Registered users are able to add comments to the articles enabling them to express their opinions on the current events that are taking place. Registered users have the ability to edit or remove their comments if they wish.
 
 ### All Auth and Profiles app
 
-The site will have the functionality to allow users to register and sign up for an account. After signing up users will be sent a confirmation email for them to confirm there account. Each user will have their own personal profile from where they will be able to store their default delivery information as well as keep track of their order history. 
+The site has the functionality to allow users to register and sign up for an account. After signing up, users are sent a confirmation email for them to confirm there account. Each registered user has their own personal profile from where they are able to store their default delivery information as well as keep track of their order history. 
 
-For the store owners they will have the ability to add, edit and delete products and news articles enabling them to maintain the store and ensure that the News is kept up to date. 
+The store owners have the ability to add, edit and delete products and news articles enabling them to maintain the store and ensure that the News is kept up to date. 
+
+### Shopping Cart
+
+The shopping cart provides the users with an overview of the products they have added to their cart and gives them the opportunity to update the quantity or remove items if they wish to do so. 
+
+### Checkout App
+
+The checkout app allows users to enter their delivery and payment information through the stripe payment system that has been implemeneted. On the checkout page the user is also provided with an overview of the order that they are about to purchase.
 
 
 
