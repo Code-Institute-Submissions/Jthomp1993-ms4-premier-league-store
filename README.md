@@ -163,6 +163,97 @@ The wireframes can be seen below.
 
 ## The Surface Plane
 
+### Design
+
+- ### Colour Scheme
+    - For the colour scheme of my website I took inspiration from the official Premier League website. I used the #37003C purple colour which as the primary colour throughout the site which can be seen on the Navbar, footer and variopus buttons. The pink colour #FF2882 was also taken from the Premier Leagues website which is used for various buttons throughout the site. The dark shade of grey #2F2F2F is used for the text colour to really make it stand out against white backgrounds. In places where text didn't have a white background I used white for the text colour to ensure it was readable for the user. 
+
+![Am I Responsive Image](static/readme_images/palette.png)
+
+- ### Typography
+    - The main font that is used throughout my website is Montserrat and I have chosed Sans Seriff to be used as a fallback should the Montserrat font not be imported correctly.
+
+- ### Imagery
+    - All of the product images on the site were taken from the [Sports Direct](https://www.google.com/search?q=sports+direct&oq=sports+direct&aqs=chrome.0.69i59j46i175i199j0j0i433l2j69i60l3.2062j0j4&sourceid=chrome&ie=UTF-8) website. All of the other images were taken from the [Premier League](https://www.premierleague.com/) website.
+
+- ### Icons
+    - All of the icons that have been used throughout my website were taken from [Font Awesome](https://fontawesome.com/icons?d=gallery&p=2)
+
+
+## Information Architecture
+
+### Database
+
+As part of the Milestone Project 4 it was a requirement that a relational database was used. So the follwing database were used:
+* Developent - Throughout the development phase, I used the SQLight databse which comes with Django. 
+* Deployment - When I deployed my project I switched the database to PostgreSQL which is an extension in Heroku.
+
+### Data Schema
+
+To upload all of the data for my categories, brands, teams, products and news articles, I created respective Fixtures files which were in JSON format.
+
+I then loaded them into the database using the following command:
+
+* python3 manage.py loaddata (fixture file name goes here)
+
+Below you can see the data model which I created using [DrawSQL](https://drawsql.app/jthompo93/diagrams/premierleague)
+
+## Technologies Used
+***
+
+### Languages 
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) - HTML5 was used to create the main strucure of the site. 
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - CSS3 was used for styling.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - JavaScript was used to provide interactive functionality.
+* [Python](https://www.python.org/) - Python was used to interact with the backend.  
+
+### Libraries, frameworks, databases and editors
+
+[Bootstrap](https://getbootstrap.com/) - Bootstrap was used for various components throughout the site as well as the responsive grid system to ensure the site is fully responsive accross all screen sizes.
+* [Font Awesome](https://fontawesome.com/) - This was used to import the arrow symbol use on the buy tickets link on the Live page. 
+* [Github](https://github.com/) - This was used to store the repository for my website and host it on Github pages.
+* [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) - Throughout the development of my website I made use of Git version control to ensure all changes and additions to my code were added to the repository. 
+* [Gitpod](https://gitpod.io/) - This was used to write all code for the website. 
+* [JQuery](https://jquery.com/) - I used JQuery to write some of the Javascript code for the website. 
+* [Google images](https://www.google.com/imghp?hl=EN) - This was used to find all of the images for the website.
+* [SQLite](https://www.sqlite.org/index.html) - This databse was used during development.
+* [PostgreSQL](https://www.postgresql.org/) - This is the database used in deployment.
+* [Stripe](https://stripe.com/en-gb) - This was used for the payment system in the checkout app.
+* [Django](https://www.djangoproject.com/) - This was used as the main framework to develop the site with Python. 
+
+### Tools 
+
+* [Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html) - This was used to resize images.
+* [Am I Responsive](http://ami.responsivedesign.is/) - This was used to show how my website is responsive across all screen sizes. 
+* [Free Online HTML Formatter](https://www.freeformatter.com/html-formatter.html) - This was used to format my HTML code to improve readability. 
+* [Free Online CSS Formatter](https://www.freeformatter.com/css-beautifier.html) - This was used to format my CSS code to improve readability.
+* [Free Online JavaScript Formatter](https://www.freeformatter.com/javascript-beautifier.html) - This was used to format my Javascript code to improve readability.
+* [Figma](https://www.figma.com/) - This was used to create the wireframes. 
+* [Google](https://www.google.com/) - Google was used extensively throughout the design and development process for images, researching solutions to coding issues and information to use in my website. 
+* [Google maps](https://www.google.co.uk/maps/) - This was used to get the coordinates of the music venues. 
+* [Google developers](https://developers.google.com/) - This was used to implement the Google Maps API. 
+* [Coloors.co](https://coolors.co/ed6a5a-f4f1bb-9bc1bc-e6ebe0-36c9c6) - I used this to generate the colour scheme for my project.
+
+Due to a lot of the same technologies being used some of the above text was copied from the read me file of my Milestone 3 [Project](https://github.com/Jthomp1993/milestone-project-3)
+
+[Back to Top](#table-of-contents)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Features
 ***
 
