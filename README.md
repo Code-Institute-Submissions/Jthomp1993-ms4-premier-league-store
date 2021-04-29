@@ -43,6 +43,19 @@ The store owner has the ability to create, read, update and delete products and 
     - [Acknowledgements](#Acknowledgements)
 
 ## User Experience
+***
+
+## Main aims of the project
+***
+
+The main aim of the Premier League Store is to provide a platform to football fans where they are able to purchase the kits and official merchandise of their favourite Premier League teams. The app is also aimed at providing it's users with up to date news regarding the Premier League whilst also giving it's registered users the chance to comment on these news articles to enable them to voice there opionion on what is happening. 
+
+It was essential that the site was easy to use and was secure for it's users whilst they were making purchases. These matters were taken into great consideration throughout the development process to enusre that users have a good user experience.
+
+## The Strategy Plane
+***
+
+To begin the UX process I started by creating a list of user stories that would enable me to carefully consider the design of my project to ensure that all of these potential users needs would be met.
 
 ## User Stories
 
@@ -93,6 +106,61 @@ The store owner has the ability to create, read, update and delete products and 
 * As the store owner I want to be able to edit and update products so that I can change the prices, images, description and ratings. 
 
 * As the store owner I want to be able to delete products so that I can remove products that are no longer available. 
+
+## The Scope Plane
+***
+
+By creating the user stories for my project, this enabled me to carefully consider the features that the site would need to have to meet the main aims of the project as well as the users needs.
+
+### The Products App
+
+The products app is where users will be able to view all of the products which the store has in stock.
+
+Users will be able to filter the products by the following categories:
+* Home kits
+* Away Kits 
+* Third Kits
+* Training
+* Merchandise
+
+Users will be able to filter the products by the following teams:
+* Arsenal
+* Chelsea
+* Fulham 
+* Liverpool 
+* Manchester City 
+* Manchester United
+* Newcastle United
+* Southampton
+* Tottenham
+* West Ham United
+
+Users will be able to filter the products by:
+* All products
+* By category
+* By rating (low to high / high to low)
+* By price (low to high / high to low)
+
+Users will be able to view a product info page which will give them a more in depth description of the product as well as enabling them to choose what size if applicable and the quantity before adding the product to their shopping cart.
+
+### The News App
+
+The news app is where users will be able to keep up to date with what is going on in the world of the Premier League.
+
+Registered users will be able to add comments to the articles enabling them to express there opinions on the current events that are taking place. Users will have the ability the edit or remove their comments if they wish.
+
+### All Auth and Profiles app
+
+The site will have the functionality to allow users to register and sign up for an account. After signing up users will be sent a confirmation email for them to confirm there account. Each user will have their own personal profile from where they will be able to store their default delivery information as well as keep track of their order history. 
+
+For the store owners they will have the ability to add, edit and delete products and news articles enabling them to maintain the store and ensure that the News is kept up to date. 
+
+
+
+
+
+
+
 
 
 
