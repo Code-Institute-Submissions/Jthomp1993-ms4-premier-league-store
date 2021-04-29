@@ -110,25 +110,25 @@ By creating the user stories for my project, this enabled me to carefully consid
 
 ### Products
 
-The products page will display all of the available products to the users. From that page they will have the ability to filter the products by price, rating, category and team. Users will be able to click on each product to view the product info page where they will be given a more in depth description and be able to add the product to their cart.
+* The products page will display all of the available products to the users. From that page they will have the ability to filter the products by price, rating, category and team. Users will be able to click on each product to view the product info page where they will be given a more in depth description and be able to add the product to their cart.
 
 ### Accounts
 
-Users will be able to register to create their own accounts. By doing so they will have their own personal profile from where they will be able to save their default delivery information and keep track of their order history. 
+* Users will be able to register to create their own accounts. By doing so they will have their own personal profile from where they will be able to save their default delivery information and keep track of their order history. 
 
-Store owners will have access to parts of the site that regular users will not. This will include pages to add new products and news articles and the store owners will also have the ability to edit and remove products and news articles.
+* Store owners will have access to parts of the site that regular users will not. This will include pages to add new products and news articles and the store owners will also have the ability to edit and remove products and news articles.
 
 ### News 
 
-The news page will feature articles of the latest news regarding the Premier League. Users will be able to add their own comments under each news article, as well as edit and delete them. 
+* The news page will feature articles of the latest news regarding the Premier League. Users will be able to add their own comments under each news article, as well as edit and delete them. 
 
 ### Shopping Cart 
 
-The shopping cart page will provide an overview of the products that the user has added to their cart and will give them option of updating the quantity or removing products.
+* The shopping cart page will provide an overview of the products that the user has added to their cart and will give them option of updating the quantity or removing products.
 
 ### Checkout 
 
-The checkout page will feature a stripe payment system which will enable users to purchase products securely. After making a purchase users will be provided with confirmation of their order. 
+* The checkout page will feature a stripe payment system which will enable users to purchase products securely. After making a purchase users will be provided with confirmation of their order. 
 
 ## The Structure Plane
 
@@ -273,23 +273,23 @@ Users are able to view a product info page which gives them a more in depth desc
 
 ### The News App
 
-The news app is where users are able to keep up to date with what is going on in the world of the Premier League.
+* The news app is where users are able to keep up to date with what is going on in the world of the Premier League.
 
-Registered users are able to add comments to the articles enabling them to express their opinions on the current events that are taking place. Registered users have the ability to edit or remove their comments if they wish.
+* Registered users are able to add comments to the articles enabling them to express their opinions on the current events that are taking place. Registered users have the ability to edit or remove their comments if they wish.
 
 ### All Auth and Profiles app
 
-The site has the functionality to allow users to register and sign up for an account. After signing up, users are sent a confirmation email for them to confirm there account. Each registered user has their own personal profile from where they are able to store their default delivery information as well as keep track of their order history. 
+* The site has the functionality to allow users to register and sign up for an account. After signing up, users are sent a confirmation email for them to confirm there account. Each registered user has their own personal profile from where they are able to store their default delivery information as well as keep track of their order history. 
 
-The store owners have the ability to add, edit and delete products and news articles enabling them to maintain the store and ensure that the News is kept up to date. 
+* The store owners have the ability to add, edit and delete products and news articles enabling them to maintain the store and ensure that the News is kept up to date. 
 
 ### Shopping Cart
 
-The shopping cart provides the users with an overview of the products they have added to their cart and gives them the opportunity to update the quantity or remove items if they wish to do so. 
+* The shopping cart provides the users with an overview of the products they have added to their cart and gives them the opportunity to update the quantity or remove items if they wish to do so. 
 
 ### Checkout App
 
-The checkout app allows users to enter their delivery and payment information through the stripe payment system that has been implemeneted. On the checkout page the user is also provided with an overview of the order that they are about to purchase.
+* The checkout app allows users to enter their delivery and payment information through the stripe payment system that has been implemeneted. On the checkout page the user is also provided with an overview of the order that they are about to purchase.
 
 ## Deployment
 
@@ -353,6 +353,90 @@ Next I headed over to my Stripe account and added a new end point and ran some t
 
 * I then added my Stripe environment variables and email settings to my settings.py file.
 * The last thing to do was commit these changes and push to GitHub and as I had set up automatic deployments it also pushed to Heroku. 
+
+## Amazon Web Services S3
+
+I used S3 which is a feature of Amazon Web Services which can be used to host the static files of your project.
+To do this I first set up a new bucket which is where your files are stored. 
+
+* I used the following CORS configuration:
+    - ```{
+    "Version": "2012-10-17",
+    "Id": "Policy1619621800768",
+    "Statement": [
+        {
+            "Sid": "Stmt1619621799266",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::premier-league-store-ms4/*"
+        }
+    ]
+}```
+* I created the following bucket policy:
+    - ```[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]```
+
+* The next step was to install boto3 and django-storages and then add them to the requirements.txt file with the following command:
+    - ```pip3 freeze > requirments.txt```
+
+* Next I added all of the following variables to my settings.py file:
+ - ```if 'USE_AWS' in os.environ:
+
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket config
+    AWS_STORAGE_BUCKET_NAME = 'premier-league-store-ms4'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'```
+
+* The next step is to create a custom_storage.py file and add the following to it:
+    - ```from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION ```
+
+* Then I removed the DISABLE_COLLECTSTATIC variable from the config vars in Heroku.
+* Then commit and changes and push to GiHub which will also push all the new changes up to the deployed Heroku app.
+
+If you would like to learn more about Amazon Web Services S3 you can [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html)
+
+
+
 
 
 
