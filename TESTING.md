@@ -21,7 +21,7 @@ All of the code from my project was passed through the W3C Markup, W3C CSS, JSHi
     - ![W3C Markup errors](static/readme_images/markup-errors.png)
 
 * [W3C CSS Validator](https://validator.w3.org/#validate_by_input) - After running my CSS fiules through the W3C CSS Validator the errors which can be seen in the image below were returned. These can all be ignored as they are due to the template inheritence which is used throughout my project.
- - ![W3C CSS errors](static/readme_images/w3c-errors.png)
+ - ![W3C CSS errors](static/readme_images/w3c-css.png)
 
 * [JSHint](https://jshint.com/) - All of the JavaScript files were run through the JSHint validator and no errors were returned. 
 
