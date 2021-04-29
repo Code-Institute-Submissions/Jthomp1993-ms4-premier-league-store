@@ -31,6 +31,7 @@ The store owner has the ability to create, read, update and delete products and 
     - [Tools](#Tools)
 - [Features](#Features)
     - [Existing Features](#Existing-Features)
+- [Testing](#Testing)
 - [Deployment](#Deployment)
     - [Deploying To Heroku](#Deploying-To-Heroku)
     - [Amazon Web Services S3](#Amazon-Web-Services-S3)
@@ -93,8 +94,6 @@ To begin the UX process I started by creating a list of user stories that would 
 * As a user I want to see efficient form validation when entering my payment details so that I can be sure that my information is safe. 
 
 * As a shopper I would like to see an overview of my order details so that I can ensure that it has been processed properly.
-
-* As a shopper I would like to receive a confirmation email for my order so that I can keep it as proof of purchase. 
 
 ### Admin
 
@@ -290,6 +289,10 @@ Users are able to view a product info page which gives them a more in depth desc
 ### Checkout App
 
 * The checkout app allows users to enter their delivery and payment information through the stripe payment system that has been implemeneted. On the checkout page the user is also provided with an overview of the order that they are about to purchase.
+
+## Testing
+
+The testing for this project can be found [here](/TESTING.md)
 
 ## Deployment
 
