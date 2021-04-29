@@ -194,6 +194,8 @@ Below you can see the data model which I created using [DrawSQL](https://drawsql
 
 ![Am I Responsive Image](static/readme_images/data_model.png)
 
+[Back to Top](#table-of-contents)
+
 ## Technologies Used
 
 ### Languages 
@@ -293,6 +295,8 @@ Users are able to view a product info page which gives them a more in depth desc
 ## Testing
 
 The testing for this project can be found [here](/TESTING.md)
+
+[Back to Top](#table-of-contents)
 
 ## Deployment
 
@@ -438,6 +442,8 @@ To do this I first set up a new bucket which is where your files are stored.
 
 If you would like to learn more about Amazon Web Services S3 you can [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html)
 
+[Back to Top](#table-of-contents)
+
 ## Credits
 
 * All product images were taken from [Sports Direct](https://www.google.com/search?q=sports+direct&oq=sports+direct&aqs=chrome.0.69i59j46i175i199j0j0i433l2j69i60l3.2062j0j4&sourceid=chrome&ie=UTF-8).
@@ -453,6 +459,8 @@ This project is for educational purposes only as part of my final prkect for Cod
 Thank you to my mentor Seun Owonikoko for her continued support throughout the development of my project. 
 
 Thank you to all of the tutors over at Code Institute for the help and advice that they have given me throughout the development of my project. 
+
+[Back to Top](#table-of-contents)
 
 
 
